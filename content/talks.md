@@ -1,0 +1,16 @@
+---
+title: "Talks"
+date: "2018-08-24"
+---
+
+### 2018
+
+* _Improving the value of public data with recount2 and phenotype prediction_ (JSM - Vancouver, BC) - [slides](https://docs.google.com/presentation/d/13OukmCNkcB7R__ceEd6U7X2IC0lJgS-FavqudfTsumo/edit?usp=sharing)
+* _Improving the value of public data with recount2 and phenotype prediction_ (UW Dept. of Biostats - Seattle, WA) - [slides](https://docs.google.com/presentation/d/1cP_wfT1ZE09CROdDgrMqKsudGySaD9LX1HYzQtQyV6I/edit?usp=sharing)
+
+### 2017
+
+* _Improving the value of public data with recount2 and phenotype prediction_ (Genomics and Bioinformatics Symposium - Baltimore, MD) - [slides](https://docs.google.com/presentation/d/1FOchHHUMM3iQr7t_yxXGmiQI-f_Hp5MVLR6WPZCvVb0/edit?usp=sharing) 
+* _In silico phenotyping to improve the usefulness of public data_ (Graybill Converence - Ft. Collins, CO) - [slides](https://docs.google.com/presentation/d/1Q2LaMOV3giRMufdED9HDk1cIEK5boMQ7knJUAbS-hAs/edit?usp=sharing)
+* _In silico phenotyping to improve the usefulness of public data_ (BIRS - Banff, Alberta) - [pdf](../../Ellis_BIRS_30Mar2017.pdf)
+* _Increasing the value of public data with in-silico phenotyping_ (Statistical and Algorithmic Challenges in Microbiome Data Analysis - Boston, MA) [slides](https://docs.google.com/presentation/d/1LBmOZi3gJsd9r61eT-cGqfSz3toxcM4fSZZjFu85qaQ/edit?usp=sharing)
