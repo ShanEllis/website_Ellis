@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Shannon's Personal Website"
 theme = "hugo-lithium"
 googleAnalytics = "UA-124592750-1"
-disqusShortname = "Shan_Ellis"
+disqusShortname = "shanellis"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [permalinks]
