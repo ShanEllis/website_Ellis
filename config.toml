@@ -1,6 +1,6 @@
 baseurl = ""
 languageCode = "en-us"
-title = "Shannon's Personal Website"
+title = "Shannon Ellis"
 theme = "hugo-lithium"
 googleAnalytics = "UA-124592750-1"
 disqusShortname = "shanellis"
@@ -36,7 +36,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
     
 [params]
-    description = "Shannon's personal website"
+    description = "Shannon Ellis' website"
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.11.0"

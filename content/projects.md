@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: "Projects"
 date: "2018-08-24"
 ---
 
