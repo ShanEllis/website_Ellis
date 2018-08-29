@@ -25,11 +25,11 @@ Before joining Jeff, I received my Ph.D. in human genetics from the [Institute o
    
 ---
 
-#### My Interests
+#### A bit more on my interests
    
 I love **analyzing data carefully** and **teaching others** how to do the same! I, of course, like pristine data sets. However, data are generally messy. Fortunately, I also really enjoy digging into and untangling the mess that often results from the generation of large amounts of data. So, if there's a data set and an interesting question, I'm probably interested. 
 
-When I'm not analyzing data, cursing myself for a bug in my code, or writing about these endeavors, I harbor reasonable obsessions for beach volleyball, [FiveThirtyEight](http://fivethirtyeight.com/), baking, podcasts, and riding my bike all around Baltimore. 
+When I'm not analyzing data, cursing myself for a bug in my code, or writing about these endeavors, I harbor reasonable obsessions for beach volleyball, baking, and riding my bike all around Baltimore. 
 
 ---
 
