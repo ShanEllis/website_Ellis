@@ -1,7 +1,8 @@
-baseurl = ""
+baseurl = "http://wwww.shanellis.com/"
 languageCode = "en-us"
 title = "Shannon Ellis"
 theme = "hugo-lithium"
+enableEmoji = true
 googleAnalytics = "UA-124592750-1"
 disqusShortname = "shanellis"
 ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
