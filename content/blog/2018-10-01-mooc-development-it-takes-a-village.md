@@ -56,7 +56,7 @@ In the [Getting Data](https://leanpub.com/universities/courses/jhu/cbds-getting-
 
 ### Data Analysis
 
-In the [Data Analysis](https://leanpub.com/universities/courses/jhu/cbds-analysis) course, we relied heavily on **[David Robinson](http://varianceexplained.org/)**'s blogpost, *[Text analysis of Trump's tweets confirms he writes only the (angrier) Android half](http://varianceexplained.org/r/trump-tweets/)*, as a wonderful example of how to formulate a data science question and determine if you have the data you need.
+In the [Data Analysis](https://leanpub.com/universities/courses/jhu/cbds-analysis) course, we relied heavily on **[David Robinson](http://varianceexplained.org/)**'s blogpost, *[Text analysis of Trump's tweets confirms he writes only the (angrier) Android half](http://varianceexplained.org/r/trump-tweets/)*, as a wonderful example of how to formulate a data science question and determine if you have the data you need, and for his contributions to the `tidytext` package.
 
 These lessons in this course also benefitted from:
 
@@ -68,8 +68,8 @@ These lessons in this course also benefitted from:
 
 In [Written and Oral Communication in Data Science](https://leanpub.com/universities/courses/jhu/cbds-communication), we utilized the work of others as examples of how to communicate effectively as a data scientist:
 
-* *Text Mining the tidy Way* [video](https://www.rstudio.com/resources/videos/text-mining-the-tidy-way/) [visuals](https://speakerd.s3.amazonaws.com/presentations/d6041c6b704d4bf7bfa9d0973ae2d006/rstudio_conf.pdf), from **[Julia Silge](https://juliasilge.com/about/)**
-* *[Harnessing the Power of the Web via R Clients for Web APIs](https://www.lucymcgowan.com/talk/asa_joint_statistical_meeting_2018/)*, from **[Lucy D'Agostino McGowan](https://www.lucymcgowan.com/)**
+* **[Julia Silge](https://juliasilge.com/about/)**'s *Text Mining the tidy Way* presentation - [video](https://www.rstudio.com/resources/videos/text-mining-the-tidy-way/) [visuals](https://speakerd.s3.amazonaws.com/presentations/d6041c6b704d4bf7bfa9d0973ae2d006/rstudio_conf.pdf) (and for her contributions to the `tidytext` package)
+* **[Lucy D'Agostino McGowan](https://www.lucymcgowan.com/)**'s *[Harnessing the Power of the Web via R Clients for Web APIs](https://www.lucymcgowan.com/talk/asa_joint_statistical_meeting_2018/)* presentation
 * **[Suzan Baert](https://suzan.rbind.io/)**'s [four-part](https://suzan.rbind.io/2018/01/dplyr-tutorial-1/) [data](https://suzan.rbind.io/2018/02/dplyr-tutorial-2/) [wrangling](https://suzan.rbind.io/2018/02/dplyr-tutorial-3/) [series](https://suzan.rbind.io/2018/04/dplyr-tutorial-4/), as an example of how to write a "How-To" blog post
 * **[Hilary Parker](https://hilaryparker.com/)**'s ["Writing an R package from Scratch"](https://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/), as an example of how to write a "How-To" blog post
 * **[Greg Wilson](http://third-bit.com/)**'s [Twitter Thread on Meetings](https://twitter.com/gvwilson/status/994553693772099589), as guidelines for when and how to have meetings.
@@ -83,8 +83,8 @@ In [Getting a Job in Data Science](https://leanpub.com/universities/courses/jhu/
 * **[Renee Teate](http://www.becomingadatascientist.com/)**, for being supportive of and helpful to others on [Twitter](https://twitter.com/BecomingDataSci?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor) who are interested in getting a job in data science
 * **[Emily Robinson](http://hookedondata.org/)**, for her blogpost [Advice For Applying to Data Science jobs](http://hookedondata.org/Advice-for-Applying-to-Data-Science-Jobs/) among *many* helpful blopost
 * **[Mona Chalabi](https://monachalabi.com/)**, for having a project galery on her website (and for her stunning art & data visualizations)
-* **[David Robinson](http://varianceexplained.org/)**, for his data science website
-* **[Nathan Yau](https://flowingdata.com/about-nathan/)**, for [Flowing Data](https://flowingdata.com)
+* **[David Robinson](http://varianceexplained.org/)**, for his website, which we used as an example 
+* **[Nathan Yau](https://flowingdata.com/about-nathan/)**, for [Flowing Data](https://flowingdata.com), which we used as an example
 * **[Kyle Scot Shank](https://twitter.com/KyleScotShank)**, for helping us out and providing an example of a data science interview take-home 
 * **[Mikhail Popov](https://people.wikimedia.org/~bearloga/)**, from the Wikimedia Foundation for contributing  [Data Analysis Task](https://github.com/wikimedia-research/Discovery-Hiring-Analyst-2016) publicly, as an example of a task one may have to complete during an interivew
 
