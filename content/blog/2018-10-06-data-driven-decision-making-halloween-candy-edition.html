@@ -16,15 +16,23 @@ output:
 
 <p>Now that we’re knee-deep into October, leaves are falling, temperatures are cooling, PSLs are flowing from Starbucks like water, and Halloween candy has completely taken over seasonal aisles in grocery stores across the country, it’s <strong>time for you to decide what candy to buy for trick-or-treaters</strong>.</p>
 <p>Sure, you could take an economic approach and just get whatever’s cheapest (if you’re a grad student, I <em>fully</em> support this route), or you could just as well take an approach to <strong><em>give the people what they want</em></strong>!</p>
-<p>To help you accomplish this, you all must know <a href="http://www.scq.ubc.ca/author/davidng/">David Ng</a> has provided us all with a <em>wealth</em> of critical data. <a href="http://www.scq.ubc.ca/so-much-candy-data-seriously/">Candy hierarchy data are available</a> from the last four years. These survey data rank <em>lots</em> of different Halloween goodies by preference. Survey respondents let us know which items bring them “JOY,” which cause them “DESPAIR,” and which are just “MEH.” Results from the 2017 survey are here in this <a href="https://boingboing.net/2017/10/30/the-2017-halloween-candy-hiera.html">awesome graphic</a>.</p>
-<p>It’s important you become aware of these data <em>now</em> before you go out and purchase the goodies you’ll hand out this year. In this analysis, we’ll look at <strong>candy preference trends over time</strong> , so that you can be <em>extra</em> confident in your Halloween Candy purchase. It’s up to you whether you want to be a <strong><em>Halloween hero</em></strong> or the <strong><em>biggest dud on your block</em></strong>.</p>
 <div id="the-data" class="section level2">
 <h2>The Data</h2>
-<p>The data are <a href="http://www.scq.ubc.ca/so-much-candy-data-seriously/">all available</a>; however, for the puproses of this post, it’s most important you know that each year survey participants are asked how different Halloween goodies make them feel( “MEH”, “JOY”, or “DESPAIR”). , the <strong>Net Feelies</strong> metric is calculated as : <strong>(= #JOY - #DESPAIR)</strong>.</p>
+<p>To help you accomplish this, you all must know <a href="http://www.scq.ubc.ca/author/davidng/">David Ng</a> has provided us all with a <em>wealth</em> of critical data. <a href="http://www.scq.ubc.ca/so-much-candy-data-seriously/">Candy hierarchy data are available</a> from the last four years. These survey data rank <em>lots</em> of different Halloween goodies by preference. Survey respondents let us know which items bring them “JOY,” which cause them “DESPAIR,” and which are just “MEH.” Results from the 2017 survey are here in this <a href="https://boingboing.net/2017/10/30/the-2017-halloween-candy-hiera.html">awesome graphic</a>.</p>
+<p>It’s important you become aware of these data <em>now</em> before you go out and purchase the goodies you’ll hand out this year. In this analysis, we’ll look at <strong>candy preference trends over time</strong> , so that you can be <em>extra</em> confident in your Halloween Candy purchase. It’s up to you whether you want to be a <strong><em>Halloween hero</em></strong> or the <strong><em>biggest dud on your block</em></strong>.</p>
 <p>Thanks to Jenny Bryan for making me aware of these data with her tweet!</p>
 {{% tweet "923302921839656960" %}}
 <div id="time-to-wrangle" class="section level3">
 <h3>Time to Wrangle</h3>
+<p>First, we’ll just load the packages we’ll use throughout.</p>
+<pre class="r"><code>## load packages
+library(janitor)
+library(readr)
+library(stringr)
+library(reshape2)
+library(readxl)
+library(ggplot2)
+library(dplyr)</code></pre>
 <p>There are a few <em>quirks</em> in these data. CSVs aren’t available for every year. Column names differ slightly. The 2014 and 2015 surveys didn’t have a “MEH” option. And, the raw data aren’t available for 2014 (just the summarized data). Thus, I decided to make all the data look like the 2014 data, calculating <em>net feelies</em> in each dataset from the raw data.</p>
 <p><em>Note</em>: If you saw me <a href="https://docs.google.com/presentation/d/1pDdmLAvg6wEwuz6XrM1FMddXv60xnojmBtmOZyIFqAk/edit?usp=sharing">present this</a> at R-Ladies Baltimore Launch and heard me say that I’d clean up this code before posting it online, I straight <em>lied</em> to you. It’s <em>still</em> not pretty. Life happens.</p>
 <div id="section" class="section level4">
@@ -36,7 +44,8 @@ if(!dir.exists(&#39;candy_data&#39;)){
 
 ## download data from the Internet
 if(!file.exists(&#39;candy_data/candyhierarchy2017.csv&#39;)) {
-  system(&#39;wget http://www.scq.ubc.ca/wp-content/uploads/2017/10/candyhierarchy2017.csv -P candy_data&#39;)
+  download.file(url = &#39;http://www.scq.ubc.ca/wp-content/uploads/2017/10/candyhierarchy2017.csv&#39;, 
+                destfile = &#39;candy_data/candyhierarchy2017.csv&#39;)
 }
 
 ## read data into R
@@ -84,7 +93,8 @@ rownames(feelies17) &lt;- rownames(output17)</code></pre>
 <h4>2016</h4>
 <pre class="r"><code>## download data from the Internet
 if(!file.exists(&#39;candy_data/BOING-BOING-CANDY-HIERARCHY-2016-SURVEY-Responses.xlsx&#39;)) {
-  system(&#39;wget https://www.scq.ubc.ca/wp-content/uploads/2016/10/BOING-BOING-CANDY-HIERARCHY-2016-SURVEY-Responses.xlsx -P candy_data&#39;)
+  download.file(url = &#39;https://www.scq.ubc.ca/wp-content/uploads/2016/10/BOING-BOING-CANDY-HIERARCHY-2016-SURVEY-Responses.xlsx&#39;, 
+                destfile = &#39;candy_data/BOING-BOING-CANDY-HIERARCHY-2016-SURVEY-Responses.xlsx&#39;)
 }
 
 ## read data into R
@@ -112,7 +122,8 @@ rownames(feelies16) &lt;- rownames(output16)</code></pre>
 <h4>2015</h4>
 <pre class="r"><code>## download data from the Internet
 if(!file.exists(&#39;candy_data/CANDY-HIERARCHY-2015-SURVEY-Responses.xlsx&#39;)) {
-  system(&#39;wget https://www.scq.ubc.ca/wp-content/uploads/2015/10/CANDY-HIERARCHY-2015-SURVEY-Responses.xlsx -P candy_data&#39;)
+    download.file(url = &#39;https://www.scq.ubc.ca/wp-content/uploads/2015/10/CANDY-HIERARCHY-2015-SURVEY-Responses.xlsx&#39;, 
+                destfile = &#39;candy_data/CANDY-HIERARCHY-2015-SURVEY-Responses.xlsx&#39;)
 }
 
 ## read data into R
@@ -146,7 +157,8 @@ rownames(feelies15) &lt;- rownames(output15)</code></pre>
 <h4>2014</h4>
 <pre class="r"><code>## download data from the Internet
 if(!file.exists(&#39;candy_data/CANDYDATA.xlsx&#39;)) {
-  system(&#39;wget http://www.scq.ubc.ca/wp-content/uploads/2014/10/CANDYDATA.xlsx -P candy_data&#39;)
+    download.file(url = &#39;http://www.scq.ubc.ca/wp-content/uploads/2014/10/CANDYDATA.xlsx&#39;, 
+              destfile = &#39;candy_data/CANDYDATA.xlsx&#39;)
 } 
 
 ## read data into R &amp; clean it up a little
@@ -266,5 +278,6 @@ data_all %&gt;%
 <p>Personally, I think <strong>Kit Kats are <em>way</em> too high</strong> on this list and are a completely mediocre (<em>at best</em>) candy.</p>
 <p>Similarly, I take offense to the fact that the respondents’ preferences are <em>so</em> heavily skewed to chocolate candy. Don’t get me wrong, chocolate is great. But that said, the first non-chocolate item to show up is <em>chardonnay</em>. Chardonnay!?!?! While <em>delicious</em>, is certainly <em>not</em> a Halloween candy to be given out to minors. I’m here to lobby for the joy brought to me by gummy candy! <strong>Swedish fish! Sour Patch Kids! Good N Plenty!</strong> These candies are getting the damn <em>shaft</em> on this list.</p>
 <p>Finally, if you ever find yourself with a kale smooothie on your hands that you’re not interested in drinking, I’d be happy to take it off your hands.</p>
+<p>** Edit 11/10/18: Thanks to <a href="http://lcolladotor.github.io/">Leo Collado-Torres</a> for helpfully pointing out that <code>wget</code> won’t work on a PC and suggesting I use <code>download.file()</code> instead.</p>
 </div>
 </div>
