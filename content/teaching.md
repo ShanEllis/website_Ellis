@@ -7,7 +7,7 @@ date: "2018-10-18"
 ### 2018-2019: Assistant Teaching Professor
 - COGS 9. Introduction to Data Science (Winter 2019)
 - COGS 108. Data Science in Practice (Spring 2019)
-- COGS 17. Introduction to Python (Spring 2019)
+- COGS 18. Introduction to Python (Spring 2019)
 
 ### 2016-2018: Postdoctoral Fellow
 - __Instructor__ | Health Data Analysis Practicum | Johns Hopkins University (Spring 2018)
