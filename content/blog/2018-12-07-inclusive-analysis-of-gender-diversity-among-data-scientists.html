@@ -155,21 +155,23 @@ complete_data %&gt;%
 </div>
 <div id="gender-by-job-title" class="section level1">
 <h1>Gender by Job Title</h1>
-<p>As reported previously, survey participants most frequently hold the job title of “Data Scientist.”</p>
+<p>As reported previously, survey participants most frequently hold the job title of “Data Scientist. <a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
 <pre class="r"><code>## what about job title?
 complete_data %&gt;%
   filter(GenderSelect!=&#39;&#39;,CurrentJobTitleSelect!=&#39;&#39;) %&gt;%
   group_by(CurrentJobTitleSelect,GenderSelect) %&gt;% 
   summarise(count = n()) %&gt;%
-  arrange(desc(count)) %&gt;% ggplot() + 
-  geom_bar(aes(CurrentJobTitleSelect,count, fill = GenderSelect), stat = &#39;identity&#39;) +
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 14)) +
+  arrange(desc(count)) %&gt;% 
+  ggplot() + 
+  geom_bar(aes(reorder(CurrentJobTitleSelect,count),count, fill = GenderSelect), stat = &#39;identity&#39;) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 25)) +
   #facet_grid(.~GenderSelect)  + 
   theme_solarized() +
+  coord_flip() +
   scale_fill_manual(values=c(&quot;#d33682&quot;,&quot;#6c71c4&quot;,&quot;#859900&quot;,&quot;#2aa198&quot;))+
-  theme(axis.text = element_text(size = 9),
-        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+  theme(axis.text = element_text(size = 10, vjust = 0.5, hjust = 0.5),
         axis.title=element_text(size=16),
+        axis.title.y=element_blank(),
         legend.text=element_text(size=12),
         legend.position=&quot;bottom&quot;, 
         legend.title = element_blank()) +
@@ -186,14 +188,16 @@ complete_data %&gt;%
   mutate(count = n()) %&gt;%
   mutate(prop=count/sum(countT)) %&gt;%
   arrange(desc(count)) %&gt;% ggplot() + 
-  geom_bar(aes(CurrentJobTitleSelect,prop, fill = GenderSelect), stat = &#39;identity&#39;) +
-  scale_x_discrete(labels = function(x) str_wrap(x, width = 14)) +
+  geom_bar(aes(reorder(CurrentJobTitleSelect,count),prop, fill = GenderSelect), stat = &#39;identity&#39;) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 25)) +
   #facet_grid(.~GenderSelect)  + 
+  coord_flip() +
   theme_solarized() +
   scale_fill_manual(values=c(&quot;#d33682&quot;,&quot;#6c71c4&quot;,&quot;#859900&quot;,&quot;#2aa198&quot;))+
   theme(axis.text = element_text(size = 10),
-        axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
+        axis.text.x = element_text( vjust = 0.5, hjust = 0.5),
         axis.title=element_text(size=14),
+        axis.title.y=element_blank(),
         legend.text=element_text(size=12),
         legend.position=&quot;bottom&quot;, 
         legend.title = element_blank()) +
@@ -210,5 +214,6 @@ complete_data %&gt;%
 <ol>
 <li id="fn1"><p>In my original post I used the term ‘non-cisgender’ throughout; however, as <a href="https://twitter.com/sharlagelfand?lang=en">Sharla Galfand</a> graciously pointed out Twitter, many non-cis individuals, such as trans men and women, would have identified as either male or female, as that is their gender! I have changed the language throughout this post to refer to non-binary individuals when appropriate, rather than using the term non-cisgender. Thank you, Sharla!<a href="#fnref1">↩</a></p></li>
 <li id="fn2"><p><strong>Biological sex</strong> can be defined as ‘male’ or ‘female’ and relates to the chromosomes in your cell. <strong>Gender</strong> is a social construct that is well-explained <a href="https://www.nationalgeographic.com/magazine/2017/01/how-science-helps-us-understand-gender-identity/">here</a> with a glossary of terms <a href="https://www.nationalgeographic.com/magazine/2017/01/explore-gender-glossary-terminology/">here</a><a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>2018/12/06 Updated these plots to be more visually interpretable…b/c I intend to use them in class and don’t want to teach bad habits.<a href="#fnref3">↩</a></p></li>
 </ol>
 </div>
