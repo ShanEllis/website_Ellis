@@ -32,9 +32,9 @@ The syllabus for this course can be viewed [here](http://bit.ly/cogs9_syllabus),
 
 * The first third of the course focused on data science questions, getting data, and data wrangling. 
 * The middle part focused on descriptive and exploratory data analyses along with data visualization. 
-* And the final third of the course walked through the basic types of analyses, including inference, prediction, text analaysis, and geospatial analysis. 
+* And the final third of the course walked through the basic types of analyses, including inference, prediction, text analysis, and geospatial analysis. 
 
-Additionally, we had two guest lectures. The first was [Page Piccinini](https://pagepiccinini.com/), who talked about her work as a Senior Data Scientist at Classy. Our seocnd was [Sean Kross](https://seankross.com), who discussed approaches to getting into the data science field as an undergraduate. Both were awesome!
+Additionally, we had two guest lectures. The first was [Page Piccinini](https://pagepiccinini.com/), who talked about her work as a Senior Data Scientist at Classy. Our second was [Sean Kross](https://seankross.com), who discussed approaches to getting into the data science field as an undergraduate. Both were awesome!
 
 # What Worked Well 
 
