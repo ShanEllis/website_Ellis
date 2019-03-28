@@ -1,0 +1,53 @@
+key,value,time
+data science,0.42105263157894735,pre
+data science,0.8333333333333334,post
+data science ethics,0.15789473684210525,pre
+data science ethics,0.6491228070175439,post
+reproducibility,0.14035087719298245,pre
+reproducibility,0.7017543859649122,post
+replicability,0.14035087719298245,pre
+replicability,0.6929824561403509,post
+version control,0.14035087719298245,pre
+version control,0.5614035087719298,post
+Python,0.6491228070175439,pre
+Python,0.6666666666666666,post
+R,0.19298245614035087,pre
+R,0.2719298245614035,post
+continuous variable,0.2543859649122807,pre
+continuous variable,0.7368421052631579,post
+categorical variable,0.17543859649122806,pre
+categorical variable,0.7631578947368421,post
+statistical error,0.3508771929824561,pre
+statistical error,0.5701754385964912,post
+API,0.15789473684210525,pre
+API,0.34210526315789475,post
+CSV,0.20175438596491227,pre
+CSV,0.6140350877192983,post
+Exploratory Data Analysis,0.07017543859649122,pre
+Exploratory Data Analysis,0.6929824561403509,post
+A|B testing,0.47368421052631576,pre
+A|B testing,0.8596491228070176,post
+Inferential Analysis,0.08771929824561403,pre
+Inferential Analysis,0.5877192982456141,post
+Machine Learning,0.2894736842105263,pre
+Machine Learning,0.6140350877192983,post
+p-hacking,0.02631578947368421,pre
+p-hacking,0.06140350877192982,post
+correlation,0.5789473684210527,pre
+correlation,0.8070175438596491,post
+confounding,0.22807017543859648,pre
+confounding,0.7017543859649122,post
+normal distribution,0.5964912280701754,pre
+normal distribution,0.7894736842105263,post
+p-value,0.4649122807017544,pre
+p-value,0.7631578947368421,post
+text-mining,0.10526315789473684,pre
+text-mining,0.37719298245614036,post
+TF-IDF,0.02631578947368421,pre
+TF-IDF,0.6578947368421053,post
+geospatial analysis,0.02631578947368421,pre
+geospatial analysis,0.5263157894736842,post
+GIS,0.017543859649122806,pre
+GIS,0.017543859649122806,post
+algorithm,0.5,pre
+algorithm,0.7192982456140351,post
