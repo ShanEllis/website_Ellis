@@ -1,0 +1,134 @@
+---
+title: 'Part III: Students’ Data In Class'
+author: Shannon Ellis
+date: '2019-03-30'
+slug: part-iii-students-data-in-class
+categories:
+  - education
+  - R
+tags:
+  - classroom
+---
+
+
+
+<div id="background" class="section level1">
+<h1>Background</h1>
+<p>This is the third post in a short series about the first course I taught as a new assistant teaching professor at UCSD - COGS 9 : Introduction to Data Science.</p>
+<p>To see earlier posts:</p>
+<ul>
+<li><a href="http://www.shanellis.com/blog/cogs9-introduction-to-data-science/">Part I</a> - discusses what went well &amp; and what went less well</li>
+<li><a href="http://www.shanellis.com/blog/part-ii-my-students-thoughts-in-data/">Part II</a> - breaks down what students thought of and learned from the course based on data they provided and how they did in the course.</li>
+</ul>
+<p>In this post I’ll focus on <strong>how I weaved students data into lecture throughout the course</strong>. The motivation in my having done this is simple - my goal is always to help students engage with the material I’m presenting. And, we humans generally like to learn about ourselves. To help students engage with the material, I did my best to demonstrate the day’s topics with examples using student data. While I used their data in a number of lectures, there are definitely opportunities to expand this to other lectures:</p>
+<tr bgcolor="color_name|hex_number|rgb_number">
+<table style="width:100%;">
+<colgroup>
+<col width="19%" />
+<col width="14%" />
+<col width="65%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Topic(s) Covered</th>
+<th align="center">Data Used</th>
+<th align="left">Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><strong>Data Science</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Ethics</strong></td>
+<td align="center">Y</td>
+<td align="left">used iclicker responses to gauge ethical thinking on various tough situation at the beginning and end of lecture; presented their results and how people’s responses changed</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Reproducibility &amp; Replicability</strong></td>
+<td align="center">Y</td>
+<td align="left">started lecture by demonstrating unfamiliarity with the topic</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Version Control</strong></td>
+<td align="center">Y</td>
+<td align="left">began class with visualization of (lack of) student familiarity with the topic of version control; showed that those familiar have more programming experience</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Programming</strong></td>
+<td align="center">Y</td>
+<td align="left">primed the topic by showing student familiarity with the topic (per pre-course survey; broke down by R and Python-familiarity)</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Data</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Getting Data</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Data Wrangling</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Data Visualization</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Descriptive Analysis</strong></td>
+<td align="center">Y</td>
+<td align="left">used student resposnes from survey to demonstrate examples of various common distributions, presented descriptive statistics from class data, &amp; discussed “unanticipated” responses and need to look at your data</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>EDA</strong></td>
+<td align="center">Y</td>
+<td align="left">generated a bunch of exploratory plots summarizing how many siblings people in our class have and whether that is related to whether you have a pet. Also presented data from iclicker question to start to explore if there is a major, class year, etc. for which the material is less novel.</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Visualization for Communication</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Inference</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Machine learning</strong></td>
+<td align="center">Y</td>
+<td align="left">made up the outcome variable “successful data scientist” and then built a predictive model based on class data; showed that model was overfit in our training data and not predictive in our test data until I added gender. Model predicted that only Asian females go on to be successful data scientists. Discussed what this means with regards to data bias and how I could use these results as an instructor for evil (gave students example: what if I only let Asian females come to Office Hours or only wrote them recommendation letters?). For more details, I’ve included my <a href="http://bit.ly/success_prediction">slides</a> from this part of the lecture</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Algorithms</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Text Analysis</strong></td>
+<td align="center">N</td>
+<td align="left">Analyzed free text response from mid-course surveys about what they liked MOST and LEAST about the course, using sentiment analysis &amp; TF-IDF.</td>
+</tr>
+<tr class="odd">
+<td align="center"><strong>Geospatial Analysis</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+<tr class="even">
+<td align="center"><strong>Future of Data Science</strong></td>
+<td align="center">N</td>
+<td align="left">–</td>
+</tr>
+</tbody>
+</table>
+</tr>
+<p>The downside here, of course, is that the plots/analysis have to be re-generated each time the course runs, but I think that minimal loss of time is time well spent. But, maybe I’ll ask about this explicitly next time to see if students actually like this aspect of the course and find it useful.</p>
+<p>Finally, I include these examples here in case these ideas are helpful to others trying to incorporate student data into their data science classroom. I’m happy to chat more details or share materials about any one of these.</p>
+</div>

@@ -1,0 +1,52 @@
+---
+title: 'Part III: Students’ Data In Class'
+author: Shannon Ellis
+date: '2019-03-30'
+slug: part-iii-students-data-in-class
+categories:
+  - education
+  - R
+tags:
+  - classroom
+---
+
+# Background 
+
+This is the third post in a short series about the first course I taught as a new assistant teaching professor at UCSD - COGS 9 : Introduction to Data Science. 
+
+To see earlier posts:
+
+* [Part I](http://www.shanellis.com/blog/cogs9-introduction-to-data-science/) - discusses what went well & and what went less well
+* [Part II](http://www.shanellis.com/blog/part-ii-my-students-thoughts-in-data/) - breaks down what students thought of and learned from the course based on data they provided and how they did in the course.
+
+In this post I'll focus on **how I weaved students data into lecture throughout the course**. The motivation in my having done this is simple - my goal is always to help students engage with the material I'm presenting. And, we humans generally like to learn about ourselves. To help students engage with the material, I did my best to demonstrate the day's topics with examples using student data. While I used their data in a number of lectures, there are definitely opportunities to expand this to other lectures:
+
+
+<tr bgcolor="color_name|hex_number|rgb_number">
+
+| Topic(s) Covered | Data Used   | Overview          |
+|:----------------:|:-----------:|:-------------------------------------------------------------|
+| **Data Science** | N   | --                       |
+| **Ethics** | Y   | used iclicker responses to gauge ethical thinking on various tough situation at the beginning and end of lecture; presented their results and how people's responses changed |
+| **Reproducibility & Replicability** | Y   | started lecture by demonstrating unfamiliarity with the topic  |
+| **Version Control** | Y   | began class with visualization of (lack of) student familiarity with the topic of version control; showed that those familiar have more programming experience   |
+| **Programming** | Y   | primed the topic by showing student familiarity with the topic (per pre-course survey; broke down by R and Python-familiarity) |
+| **Data** | N   | --                       |
+| **Getting Data** | N   | --                       |
+| **Data Wrangling** | N   | --                       |
+| **Data Visualization** | N   | --                       |
+| **Descriptive Analysis** | Y   | used student resposnes from survey to demonstrate examples of various common distributions, presented descriptive statistics from class data, & discussed "unanticipated" responses and need to look at your data|
+| **EDA** | Y   | generated a bunch of exploratory plots summarizing how many siblings people in our class have and whether that is related to whether you have a pet. Also presented data from iclicker question to start to explore if there is a major, class year, etc. for which the material is less novel. |
+| **Visualization for Communication** | N   | --                       |
+| **Inference** | N   | --                       |
+| **Machine learning** | Y   | made up the outcome variable "successful data scientist" and then built a predictive model based on class data; showed that model was overfit in our training data and not predictive in our test data until I added gender. Model predicted that only Asian females go on to be successful data scientists. Discussed what this means with regards to data bias and how I could use these results as an instructor for evil (gave students example: what if I only let Asian females come to Office Hours or only wrote them recommendation letters?). For more details, I've included my [slides](http://bit.ly/success_prediction) from this part of the lecture |
+| **Algorithms** | N   | --                       |
+| **Text Analysis** | N   | Analyzed free text response from mid-course surveys about what they liked MOST and LEAST about the course, using sentiment analysis & TF-IDF. |
+| **Geospatial Analysis** | N   | --                       |
+| **Future of Data Science** | N   | --                       |
+</tr>
+
+The downside here, of course, is that the plots/analysis have to be re-generated each time the course runs, but I think that minimal loss of time is time well spent. But, maybe I'll ask about this explicitly next time to see if students actually like this aspect of the course and find it useful.
+
+Finally, I include these examples here in case these ideas are helpful to others trying to incorporate student data into their data science classroom. I'm happy to chat more details or share materials about any one of these.
+
