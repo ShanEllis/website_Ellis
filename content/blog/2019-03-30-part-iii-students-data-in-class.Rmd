@@ -35,7 +35,7 @@ In this post I'll focus on **how I weaved students data into lecture throughout 
 | **Getting Data** | N   | --                       |
 | **Data Wrangling** | N   | --                       |
 | **Data Visualization** | N   | --                       |
-| **Descriptive Analysis** | Y   | used student resposnes from survey to demonstrate examples of various common distributions, presented descriptive statistics from class data, & discussed "unanticipated" responses and need to look at your data|
+| **Descriptive Analysis** | Y   | used student responses from survey to demonstrate examples of various common distributions, presented descriptive statistics from class data, & discussed "unanticipated" responses and need to look at your data|
 | **EDA** | Y   | generated a bunch of exploratory plots summarizing how many siblings people in our class have and whether that is related to whether you have a pet. Also presented data from iclicker question to start to explore if there is a major, class year, etc. for which the material is less novel. |
 | **Visualization for Communication** | N   | --                       |
 | **Inference** | N   | --                       |
