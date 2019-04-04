@@ -3,6 +3,10 @@ title: "Talks"
 date: "2018-08-24"
 ---
 
+### 2019
+
+* _Making a Case for Why Programming Will Save You Time_ - (MSACL - Palm Springs, CA) - [slides](http://bit.ly/MSACL_slides)
+
 ### 2018
 
 * _Designing MOOCs to Democratize Data Science Education_ (Design@Large - San Deigo, CA) - [slides](https://docs.google.com/presentation/d/1MREoJJhIHfjQuplBQ1S7TOCR8bBJTjJl0wsfUL9RXZE/edit?usp=sharing)
