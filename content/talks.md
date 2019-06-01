@@ -5,7 +5,8 @@ date: "2018-08-24"
 
 ### 2019
 
-* _Making a Case for Why Programming Will Save You Time_ - (MSACL - Palm Springs, CA) - [slides](http://bit.ly/MSACL_slides)
+* _Teaching Data Science: A Workshop for High School Teachers_ - (SDSS - Bellevue, WA) [slides](http://bit.ly/SDSS_2019); [materials](http://bit.ly/sdss_workshop)
+* _Making a Case for Why Programming Will Save You Time_ - (MSACL - Palm Springs, CA) - [slides](http://bit.ly/MSACL_slides); [materials](http://bit.ly/MSACL_R)
 
 ### 2018
 
