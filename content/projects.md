@@ -3,9 +3,9 @@ title: "Projects"
 date: "2018-08-24"
 ---
 
-### Chromebook Data Science
+### Cloud-Based Data Science
 
-[Chromebook Data Science](http://jhudatascience.org/chromebookdatascience/index.html) is a free, online, educational program that sets out to help anyone who can read, write, and use a computer move into the field of data science. We've been developing content and carrying out in-person tutoring to test out and improve this material. Upon official launch, our ultimate goal will be that this program be used as an intervention to improve economic conditions for people both locally in Baltimore and around the world.
+[Cloud-Based Data Science](https://www.clouddatascience.org/) is a free, online, educational program that sets out to help anyone who can read, write, and use a computer move into the field of data science. We've developed content and have built and carried out an in-person tutoring program to ensure we reach those who historically have not had access to data science education. With each scholar that completes the program we're working to improve the economic conditions for people locally (in Baltimore, MD) and ultimately around the world.
 
 ### The *recount* project
 
