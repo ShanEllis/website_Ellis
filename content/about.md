@@ -5,7 +5,11 @@ date: "2018-08-24"
 
 <center><font color="#4B0082"><font style="font-size:6vw"><font face='Great Vibes'>Shannon E. Ellis</font></font></font></center>
 
-Assistant Teaching Professor in the [Cognitive Science](During my postdoc) department at [UCSD](https://ucsd.edu/). For the 2018-2019 academic year, I'm teaching COGS 9. Introduction to Data Science, [COGS 108. Data Science in Practice](https://github.com/COGS108), and [COGS 18. Introduction to Python](https://cogs18.github.io).
+Assistant Teaching Professor in the [Cognitive Science](During my postdoc) department at [UCSD](https://ucsd.edu/) where I teach: 
+
+* COGS 9. Introduction to Data Science
+* [COGS 108. Data Science in Practice](https://github.com/COGS108)
+* [COGS 18. Introduction to Python](https://cogs18.github.io).
 
 ---
 
