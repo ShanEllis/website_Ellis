@@ -11,9 +11,9 @@ date: "2018-08-24"
 
 ### 2018
 
-* _Designing MOOCs to Democratize Data Science Education_ (Design@Large - San Deigo, CA)  [[slides](https://docs.google.com/presentation/d/1MREoJJhIHfjQuplBQ1S7TOCR8bBJTjJl0wsfUL9RXZE/edit?usp=sharing)]
+* _Designing MOOCs to Democratize Data Science Education_ (Design@Large - San Deigo, CA)  [[slides](https://docs.google.com/presentation/d/1MREoJJhIHfjQuplBQ1S7TOCR8bBJTjJl0wsfUL9RXZE/edit?usp=sharing)] [[talk](https://www.youtube.com/watch?v=P-mAGIE52yY&feature=youtu.be)]
 * _Improving the value of public data with recount2 and phenotype prediction_ (JSM - Vancouver, BC) [[slides](https://docs.google.com/presentation/d/13OukmCNkcB7R__ceEd6U7X2IC0lJgS-FavqudfTsumo/edit?usp=sharing)]
-* _Improving the value of public data with recount2 and phenotype prediction_ (UW Dept. of Biostats - Seattle, WA) - [[slides](https://docs.google.com/presentation/d/1cP_wfT1ZE09CROdDgrMqKsudGySaD9LX1HYzQtQyV6I/edit?usp=sharing)]
+* _Improving the value of public data with recount2 and phenotype prediction_ (UW Dept. of Biostats - Seattle, WA) [[slides](https://docs.google.com/presentation/d/1cP_wfT1ZE09CROdDgrMqKsudGySaD9LX1HYzQtQyV6I/edit?usp=sharing)]
 
 ### 2017
 
