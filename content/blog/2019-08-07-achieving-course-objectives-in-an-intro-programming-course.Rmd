@@ -1,0 +1,110 @@
+---
+title: Achieving Course Objectives in An Intro Programming Course
+author: Shannon Ellis
+date: '2019-08-07'
+slug: achieving-course-objectives-in-an-intro-programming-course
+categories:
+  - python
+  - education
+tags:
+  - analysis
+---
+
+This post summarizes feedback I received from my awesome students after teaching [COGS 18 : Introduction to Python](https://cogs18.github.io/intro/) this past Spring quarter at UCSD. While this was my first time teaching the course, it was developed and taught once previously by grad student extraordinaire, [Tom Donoghue](https://tomdonoghue.github.io/). 
+
+This course is required of all cognitive science majors and is meant to be a true introduction to programming. No prior programming experience is expected or required. I do not expect students to leave this course being master programmers, but I do expect them to be able to read, write, and understand code.
+
+We spent the first 7 weeks of the quarter learning basic programming concepts before becoming a project-focused class. For the last 3 weeks of the quarter we focused on using code to solve a problem or build something (each student completes their own individual final project) and lectures focus on debugging and how to write *good* code.
+
+# Course Objectives
+
+More specifically, I set out with six course objectives:
+
+1. Program at an introductory level in the Python programming language
+1. Read basic Python programs, recognizing the structures they use and be able to explain how they work
+1. Solve basic problems using programmatic solutions
+1. Write and debug small Python programs
+1. Execute Python programs on your local computer, using notebooks and the command line
+1. Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
+
+
+
+# Survey Analysis:
+
+At the end of the course, I solicited feedback. In this post I'll focus on two really important questions about how *they* were feeling with the course content: 
+
+1. How comfortable are you with programming in Python?
+2. Check all that apply: After COGS18, which of the following skills do you feel you possess?
+
+## Response Rate
+
+```{r setup, message = FALSE, warning=FALSE, echo = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE, fig.width = 7)
+library(tidyverse)
+library(googlesheets)
+library(reshape2)
+```
+
+```{r}
+df <- read_csv("cogs18_data/cogs18_sp19.csv")
+```
+
+I had 272 students in COGS 18 this past Spring and got responses from 195 on this survey (Response Rate = `r round((nrow(df)/272)*100,1)`%). The survey was optional, but students did receive extra credit for their response. 
+
+### How comfortable are you with programming in Python?
+
+In response to this question, the students were guided to respond on a scale from 1 to 5, where 1 was "What's Python?" and 5 was "I could teach an intro Python Class!"
+
+```{r programming}
+ggplot(df, aes(`How comfortable are you with programming in Python?`)) + 
+  geom_bar() +
+  theme_classic(base_size = 14) +
+  labs(y = "Number of Students",
+       title = "Most Students believe they're halfway between \n 'What's Python?' (1) and 'I could teach an intro Python Class!' (5)") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12))
+```
+
+The vast majority of students fell somewhere in the middle, which was promising to see! But, that didn't give me a very granular understanding of what contributed to this level of comfort with Python Programming.
+
+### Check all that apply: After COGS18, which of the following skills do you feel you possess?
+
+The skills I asked about were the course objectives I had listed on the course syllabus and had set out to teach throughout the quarter. Students were asked to check all that apply and were also given the option of "None of the Above." These data[^1] are summarized here:
+
+```{r objectives}
+objectives <- df %>% 
+  select(skills = `Check all that apply: After COGS18, which of the following skills do you feel you possess?`) %>% 
+  mutate(`Program at Intro Level` = ifelse(grepl("Program at an introductory", skills), 1, 0),
+         `Understand Programs` = ifelse(grepl("Read basic Python programs", skills), 1, 0),
+         `Programmatic Problem Solving` = ifelse(grepl("Solve basic problems", skills), 1, 0),
+         `Write & Debug` = ifelse(grepl("Write and debug small Python programs", skills), 1, 0),
+         `Command Line` = ifelse(grepl("Execute Python programs", skills), 1, 0),
+         `Best Practices` = ifelse(grepl("Describe and implement best practices", skills), 1, 0),
+         `None` = ifelse(grepl("None of the above", skills), 1, 0),
+  ) %>% 
+  select(-skills)
+
+obj <- melt(objectives) %>% 
+  group_by(variable) %>% 
+  summarise(n = sum(value), perc = sum(value)/nrow(objectives) * 100) 
+
+ggplot(obj, aes(x=reorder(variable, perc), y = perc)) +
+  geom_bar(stat = "identity") +
+   geom_text(aes(x=reorder(variable, perc), y = perc, label=round(perc,1)),
+             vjust=0.5, hjust = 0.5, nudge_y = 3.5) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  theme_classic(base_size = 14) +
+  labs(y = "Percentage of Respondents",
+       x = "Course Objective",
+       title = "Students Read Python Code Better Than They Write it After COGS18") +
+  ylim(0,100) +
+  coord_flip()  +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12))
+```
+
+It was great to see that almost 90% of students felt they could program at an Intro level, as that's my main goal. But, of course I think this number can be even higher going forward! 
+
+What I love about asking students about their feelings of achieving the course objectives is I get to see where I should focus my attention the next time I teach this course.  During the quarter, I sensed that students struggled in the last few weeks of the course when we focused on best practices in Python and using the command line (rather than Jupyter notebooks). I also had a feeling throughout the quarter that I could have taught debugging better and done more live coding. So, fingers crossed I can increase all these numbers this Fall when I teach the course again. And, specifically, I'm going to work improve how effectively I teach the last few weeks of the course!
+
+[^1]: I did forget to shuffle the order when presenting these options to students, so there could be a bias toward the first few course objectives listed above as all students saw them in the numbered order above...and could have gotten tired of reading all options, but that would underestimate percentage, so I'm comfortable that these are lower bounds.
