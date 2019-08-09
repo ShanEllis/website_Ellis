@@ -1,0 +1,37 @@
+key,value,time
+data science,0.2943786982248521,pre
+data science,0.6449704142011834,post
+experimental design,0.2588757396449704,pre
+experimental design,0.3254437869822485,post
+data collection,0.3269230769230769,pre
+data collection,0.5414201183431953,post
+version control,0.4452662721893491,pre
+version control,0.5887573964497042,post
+GitHub,0.5769230769230769,pre
+GitHub,0.7544378698224852,post
+Python,0.4807692307692308,pre
+Python,0.7588757396449705,post
+Jupyter Notebooks,0.34171597633136097,pre
+Jupyter Notebooks,0.7544378698224852,post
+spreadsheet,0.4467455621301775,pre
+spreadsheet,0.48372781065088755,post
+JSON,0.23668639053254437,pre
+JSON,0.4408284023668639,post
+XML,0.15976331360946747,pre
+XML,0.21745562130177515,post
+machine learning,0.27662721893491127,pre
+machine learning,0.3801775147928994,post
+normal distribution,0.5606508875739645,pre
+normal distribution,0.5931952662721893,post
+confounding,0.21005917159763313,pre
+confounding,0.2781065088757396,post
+p-value,0.3831360946745562,pre
+p-value,0.5251479289940828,post
+p-hacking,0.05917159763313609,pre
+p-hacking,0.09171597633136094,post
+Sentiment Analysis,0.05029585798816568,pre
+Sentiment Analysis,0.23816568047337278,post
+geospatial analysis,0.026627218934911243,pre
+geospatial analysis,0.16863905325443787,post
+none of the above,0.05473372781065089,pre
+none of the above,0.014792899408284023,post
