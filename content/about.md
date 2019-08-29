@@ -5,11 +5,9 @@ date: "2018-08-24"
 
 <center><font color="#4B0082"><font style="font-size:6vw"><font face='Great Vibes'>Shannon E. Ellis</font></font></font></center>
 
-Assistant Teaching Professor in the [Cognitive Science](During my postdoc) department at [UCSD](https://ucsd.edu/) where I teach: 
+As an Assistant Teaching Professor in the [Cognitive Science](During my postdoc) department at [UCSD](https://ucsd.edu/), my primary focus is teaching data science and programming to undergraduates in large-enrollment classes. Teaching to and learning from students is the best part of my job! As such, I care deeply about providing my students with a technical education in an inclusive environment. And, while I have a whole lot of students, I do my best to ensure that they all receive the education they want, deserve, and are paying for.
 
-* COGS 9. Introduction to Data Science
-* [COGS 108. Data Science in Practice](https://github.com/COGS108)
-* [COGS 18. Introduction to Python](https://cogs18.github.io).
+I also love providing programming workshops to individuals/groups interested in learning more about data science and programming. Finally, discussing the work I've done to make data science education more inclusive in Baltimore, MD is another favorite pasttime. I look forward to working to make data science more inclusive in my new home city of San Diego, so I am always open to discussing ideas about how to make this possible.
 
 ---
 
@@ -32,9 +30,9 @@ I received my Ph.D. in human genetics from the [Institute of Genetic Medicine](h
 
 #### My Interests
    
-I love **analyzing data carefully** and **teaching others** how to do the same! I'm always down to talk about teaching, data science, all things R (and newly Python), pedagogy, and genetics.
+I love **analyzing data carefully** and **teaching others** how to do the same! I'm always happy to talk about teaching, data science, all things R (and newly Python), pedagogy, and genetics.
 
-When I'm not busy analyzing data, cursing myself for a bug in my code, or teaching others how to do the same, I am always down to chat about beach volleyball, baking, biking, and great podcasts. 
+When I'm not busy analyzing data, cursing myself for a bug in my code, or teaching others how to do the same, I am always down to chat about beach volleyball, books, baking, biking, and great podcasts. 
 
 ---
 

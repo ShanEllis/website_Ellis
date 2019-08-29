@@ -5,9 +5,9 @@ date: "2018-10-18"
 
 
 ### 2018-2019: Assistant Teaching Professor
-- COGS 9. Introduction to Data Science (Wi19, Fa19)
-- [COGS 108. Data Science in Practice](https://github.com/COGS108) (Sp19)
-- [COGS 18. Introduction to Python](https://cogs18.github.io) (Sp19, Fa19)
+- __Instructor__ | COGS 9. Introduction to Data Science | UC San Diego (Wi19, Fa19) 
+- __Instructor__ | [COGS 108. Data Science in Practice](https://github.com/COGS108) | UC San Diego (Sp19)
+- __Instructor__ | [COGS 18. Introduction to Python](https://cogs18.github.io) | UC San Diego (Sp19, Fa19)
 
 ### 2016-2018: Postdoctoral Fellow
 - __Instructor__ | Health Data Analysis Practicum | Johns Hopkins University (Spring 2018)
