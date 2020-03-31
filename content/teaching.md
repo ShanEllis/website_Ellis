@@ -4,7 +4,7 @@ date: "2018-10-18"
 ---
 
 
-### 2018-2019: Assistant Teaching Professor
+### 2018-2020: Assistant Teaching Professor
 - __Instructor__ | COGS 9: Introduction to Data Science | UC San Diego (Wi19, Fa19) 
 - __Instructor__ | [COGS 18: Introduction to Python](https://cogs18.github.io) | UC San Diego (Sp19, Fa19, Sp20)
 - __Instructor__ | [COGS 108: Data Science in Practice](https://github.com/COGS108) | UC San Diego (Sp19, Wi20, Sp10)
