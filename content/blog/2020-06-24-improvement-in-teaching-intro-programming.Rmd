@@ -1,0 +1,162 @@
+---
+title: Three Terms Teaching Intro Programming
+author: Shannon Ellis
+date: '2020-06-24'
+slug: improvement-in-teaching-intro-programming
+categories:
+  - python
+  - education
+tags:
+  - postmortem
+---
+
+```{r setup, message = FALSE, warning=FALSE, echo = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE, fig.width = 7)
+library(tidyverse)
+library(reshape2)
+```
+
+```{r}
+# each quarter's data
+sp19 <- read_csv("cogs18_data/cogs18_sp19.csv") %>% 
+  mutate(term = "Spring 2019") %>% 
+  rename(objectives = `Check all that apply: After COGS18, which of the following skills do you feel you possess?`)
+fa19 <- read_csv("cogs18_data/cogs18_fa19.csv") %>% 
+  mutate(term = 'Fall 2019') %>% 
+  rename(objectives = `Check all that apply: After COGS 18, which of the following skills do you feel you possess?`)
+sp20 <- read_csv("cogs18_data/cogs18_sp20.csv") %>% 
+  mutate(term = 'Spring 2020') %>% 
+  rename(objectives = `Check all that apply: After COGS 18, which of the following skills do you feel you possess?`)
+
+# combine
+df <- bind_rows(sp19, fa19, sp20) %>%
+  mutate(term = fct_relevel(term, 
+            "Spring 2019", "Fall 2019", "Spring 2020"))
+```
+This past quarter was a weird one. COVID-19 necessitated remote education, and so I set out to teach programming to 330+ students online from my dining room. (I simultaneously taught data science to 440+ students, but that's another post).
+
+Here, I summarize the three quarters I've now taught COGS 18 Introduction to Python at UCSD, following up on my [previous blog post](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) about this course, which summarized my first go at teaching this course.
+
+So...let's see how I've done.
+
+# Course Objectives
+
+As a reminder, the course objectives for this course are as follows: 
+
+1. Program at an introductory level in the Python programming language
+1. Read basic Python programs, recognizing the structures they use and be able to explain how they work
+1. Solve basic problems using programmatic solutions
+1. Write and debug small Python programs
+1. Execute Python programs on your local computer, using notebooks and the command line
+1. Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
+
+## Changes I've made to the course
+
+While the structure of the course has remained consistent, having learned from where students struggled previously, I've changed the time I dedicate to certain topics and the way in which I explain many things, particularly in the last few weeks of the course when we move away from Jupyter Notebooks and discuss code testing, documentation, and code style. I increased the live coding I've done throughout the course and particularly at the end of the course. Further, I included more demonstrations of common issues in code that students encounter and demonstrated more explicitly how to refactor and improve code style.
+
+There have been a number of logistical changes across iterations; however, for Spring 2020, the largest logistical changes were that I 1) did not require/motivate attendance at any specific time, 2) exams were completed remotely and were open notes/open Google and 3) coding labs were graded on effort rather than simply "showing up".
+
+# Survey Analysis:
+
+At the end of the course, I always solicit feedback from students. As in the previous post, I’ll again focus on two important questions about how they were feeling with the course content:
+
+1. How comfortable are you with programming in Python?
+1. Check all that apply: After COGS18, which of the following skills do you feel you possess?
+
+## Response Rate
+
+```{r}
+n_sp19 = 275
+n_fa19 = 301
+n_sp20 = 307
+```
+
+
+The first time I taught the course there were `r n_sp19` students enrolled at the end of the quarter, with `r nrow(sp19)` students (`r round(nrow(sp19)/n_sp19*100,0)`%) responding to the post-course survey. For Fall 2019, there were `r n_fa19` students enrolled, with `r nrow(fa19)` students (`r round(nrow(fa19)/n_fa19*100,0)`%) responding. And, in Spring 2020, there were `r n_sp20` students enrolled, with `r nrow(sp20)` students (`r round(nrow(sp20)/n_sp20*100,0)`%) responding.
+
+### How comfortable are you with programming in Python?
+
+In response to this question, students were guided to respond on a scale from 1 to 5, where 1 was “What’s Python?” and 5 was “I could teach an intro Python Class!”
+
+```{r programming}
+vline <- df %>% group_by(term) %>% summarize(median = median(`How comfortable are you with programming in Python?`))
+
+
+ggplot(df, aes(`How comfortable are you with programming in Python?`, group=term)) + 
+  geom_bar(aes(y = ..prop.., fill = factor(..x..)), stat="count") + 
+  scale_y_continuous(labels=scales::percent) +
+  scale_fill_manual(values = rep("gray48", 5)) + 
+  facet_grid(~term) +
+  geom_vline(data = vline, aes(xintercept = median), color='red') +
+  theme_classic(base_size = 14) +
+  labs(y = "Proportion of Students",
+       title = "Over iterations of the course, students have moved further from \n 'What's Python?' (1) toward 'I could teach an intro Python Class!' (5)") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        legend.position = "none",
+        plot.title.position = "plot",
+        strip.background = element_rect(colour=NA, fill=NA),
+        panel.border = element_rect(fill = NA, color = "black"))
+```
+
+Here, the red vertical line indicates the median. With this, we see a slight shift in students' comfort, with more students reporting that they are a 4 out of 5 in the most recent iteration of the course. This past Spring (sp20), >90% of the class responded that they are at least a 3. In the beginning of the quarter in this class, 60% of students typically have no programming experience. I am very clear with students on the first day of class that I do *not* expect them to become a programming expert in 10 weeks. It's my goal that students move away from novice in the direction of expert. It is my expectation that students leave this course rating themselves a 3 out of 5 Anything higher is great, but not my expectation. My goal will be to get closer to 100% of the class self-reporting a 3.
+
+### Check all that apply: After COGS 18, which of the following skills do you feel you possess?
+
+Beyond general student comfort level, I'm always curious about how well I've accomplished my course objectives.
+
+In my [previous post](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) I wrote: 
+
+> *During the quarter, I sensed that students struggled in the last few weeks of the course when we focused on best practices in Python and using the command line (rather than Jupyter notebooks). I also had a feeling throughout the quarter that I could have taught debugging better and done more live coding. So, fingers crossed I can increase all these numbers this Fall when I teach the course again. And, specifically, I’m going to work improve how effectively I teach the last few weeks of the course!*
+
+```{r}
+calculate_objectives <- function(x){
+  objectives <- x %>% 
+  select(skills = objectives, term) %>% 
+  mutate(`Program at Intro Level` = ifelse(grepl("Program at an introductory", skills), 1, 0),
+         `Understand Programs` = ifelse(grepl("Read basic Python programs", skills), 1, 0),
+         `Programmatic Problem Solving` = ifelse(grepl("Solve basic problems", skills), 1, 0),
+         `Write & Debug` = ifelse(grepl("Write and debug small Python programs", skills), 1, 0),
+         `Command Line` = ifelse(grepl("Execute Python programs", skills), 1, 0),
+         `Best Practices` = ifelse(grepl("Describe and implement best practices", skills), 1, 0),
+         `None` = ifelse(grepl("None of the above", skills), 1, 0),
+  ) %>% 
+  select(-skills)
+  
+  obj <- melt(objectives) %>% 
+  group_by(term, variable) %>% 
+  summarise(n = sum(value), perc = sum(value)/nrow(objectives) * 100) 
+  
+  return(obj)
+}
+
+obj_sp19 <- calculate_objectives(sp19)
+obj_fa19 <- calculate_objectives(fa19)
+obj_sp20 <- calculate_objectives(sp20)
+
+obj <- bind_rows(obj_sp19, obj_fa19, obj_sp20) %>%
+  ungroup() %>%
+  mutate(term = fct_relevel(term, 
+            "sp19", "fa19", "sp20"))
+
+ggplot(obj, aes(x=reorder(variable, perc), y = perc, fill = term)) +
+  geom_bar(stat = "identity", position="dodge") +
+  geom_text(aes(x=reorder(variable, perc), y = perc, label=round(perc,0)), 
+            colour=("white"),
+            vjust=0.5, hjust=1, position=position_dodge(width=0.9)) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 10)) +
+  scale_fill_manual(values = c("gray70", "gray50", "gray30")) + 
+  theme_classic(base_size = 14) +
+  labs(y = "Percentage of Respondents",
+       x = "Course Objective",
+       title = "With adjustments to the course, students feel more comfortable in the command line \n and in their ability to implement best coding practices") +
+  ylim(0,100) +
+  coord_flip()  +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        plot.title.position = "plot")
+```
+
+Here we see that for the top three course objectives, there hasn't been much change from one quarter to the next; however, we do start to see shifts in students' comfort writing and debugging code, understanding and applying best coding practices, and in their comfort at the command line, which is great. But, I'd love to see these increase further. I have a few changes to make to the course overall, so hopefully, I can increase student mastery of these course objectives more in the future! I also intend to analyze (at some point) student projects, as they are excellent sources of students demonstrating mastery, which can be used in addition to this survey data. 
+
+Next academic year, I'm teaching this course every quarter. I'm so excited to improve the course and continue to teach Python to our amazing undergraduates at UCSD!

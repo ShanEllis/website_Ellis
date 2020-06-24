@@ -27,8 +27,6 @@ More specifically, I set out with six course objectives:
 1. Execute Python programs on your local computer, using notebooks and the command line
 1. Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
 
-
-
 # Survey Analysis:
 
 At the end of the course, I solicited feedback. In this post I'll focus on two really important questions about how *they* were feeling with the course content: 
