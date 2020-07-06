@@ -60,7 +60,7 @@ I figured sharing slides that I use to demonstrate how I approach explaining eth
 
 [^3]: I discuss what worked well from teaching ethics in COGS9 in [this post](http://www.shanellis.com/blog/cogs9-introduction-to-data-science/).
 
-- clicker questions (warmup)
+- clicker questions (warm-up)
 - introduction of places where data science has veered off course
 - in-depth presentation of *Experimental evidence of massive-scale emotional contagion through social networks* (PNAS 2014) with discussion of ethical debate
 - introduction to first principles: Belmont Report & the Common Rule
@@ -95,7 +95,7 @@ These sorts of examples allow me to teach both the concept for that lecture (mac
 
 #### Assignments
 
-Within assignments, we can also have students practice a skill while also considering ethics. For example, in COGS 108 Data Science In Practice, we use an assignment where students have to wrangle a number of datasets, and in doing so are able to identify individuals in the dataset. Then, we ask students to de-anonymyze the data. This allows us to, in a very real way, discuss data privacy. We explicitly demonstrate how "anonymized" data are not always as anonymous as we intend, while also getting students a lot of practice with data wrangling.
+Within assignments, we can also have students practice a skill while also considering ethics. For example, in COGS 108 Data Science In Practice, we use an assignment where students have to wrangle a number of datasets, and in doing so are able to identify individuals in the dataset. Then, we ask students to de-anonymize the data. This allows us to, in a very real way, discuss data privacy. We explicitly demonstrate how "anonymized" data are not always as anonymous as we intend, while also getting students a lot of practice with data wrangling.
 
 #### Readings 
 
@@ -131,4 +131,10 @@ Additional Post-Course Student Comments:
 > _I really appreciate how much the course and the project are focusing on the ethical questions. **Most of my CS/DS classes don't discuss these issues as thoroughly as this class does. After taking this class, I learned to critically analyze a research not only by its technical details, but also by its ethical saliency.**_ - COGS 9, Winter 2018
 
 > _I just wanted to send you a thank you email because I found that a lot of the way I conduct myself in the workplace was greatly inspired from your class. I was fortunate enough to land an internship this summer at Northrop Grumman, and although it is a software engineering internship, many of the things I learned in COGS 108 is still applicable. My newfound background knowledge of Python and **the ethics and values you preach in class are things that I often find the most valuable**. Although the assignments were where I made the most progress "technically" (i.e writing the code, debugging the code, etc;), I enjoyed your lectures the most. Your ability to curate both informative and interesting topics that kept me engaged and made it easy to understand complex ideas are greatly appreciated. Once again, thank you for having me in your class and thank you for teaching a class that I found had **much more value than just some understanding of code, but instead on ethics and good practices**._ - COGS 108, Spring 2019
+
+## Conclusion
+
+While I very much sympathize with the tweet thread I got in response and agree with the sentiments, I hope this blog post can help spark some ideas in data science educators as to how they incorporate ethics early and often without having to change too much of what they cover in their courses. I very much believe that discussing ethics early on in a course and then having ethical discussions/examples sprinkled throughout a data science course can be incredibly effective and accomplished without removing too much content from one's current course. 
+
+And, I would, of course, love to see examples of what others have done and read blog posts or tweets about what people cut or changed to make this possible as they go through the process!
 
