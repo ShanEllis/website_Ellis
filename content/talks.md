@@ -5,7 +5,8 @@ date: "2018-08-24"
 
 ### 2020
 
-* _The {Art} of Effective Data Viz_ (Data Science Alliance Data Skills - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1wT9M4J2O72s_pbcoqmaNLgBQJIUi2SzmvSmULmOWbSM/edit?usp=sharing)]
+* _The {Art} of Effective Data Viz_ (Data Science Alliance Data Skills - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1wT9M4J2O72s_pbcoqmaNLgBQJIUi2SzmvSmULmOWbSM/edit?usp=sharing)][[padlet](https://bit.ly/dsa_viz)][[talk](https://youtu.be/VcMnO6ArKOI)]
+*  _Perspectives of a Data Scientist_ (Data Science Student Society - San Diego, CA)[[podcast](https://medium.com/ds3ucsd/perspectives-of-shannon-ellis-an-academic-data-scientist-99cafe573f86)]
 * _Data Science Presentations_ (DS3 - San Diego, CA) [[slides](http://bit.ly/ds3_presentations)]
 * _Improving the value of public data with recount2 and phenotype prediction_ (CSSA - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1tIK5gm-wM_YgL-11JCRXWI-6WMKCfko7HqGefAZTm7k/edit?usp=sharing)]
 * _RStudio Cloud in the Classroom_ (ASA K-12 Virtual Workshop) [[slides](https://docs.google.com/presentation/d/1wBDVZ8X9bQIIcFnsJ9u85HQFTrk9RvtJCKkEQlG0Zds/edit?usp=sharing)] [[materials](https://rstudio.cloud/spaces/48680/join?access_code=WmNhjPsKLq5BoC8bm8aXKzIxN1qbZ7dOXBXYE5fc)]
