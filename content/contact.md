@@ -9,8 +9,6 @@ Cognitive Science Building, Room 243 <br />
 La Jolla, CA 92093 <br />
 
 Office Hours (Fall 2020)  
-- **DSC 180A**: TBD  
-- **COGS 18**: TBD   
-- **COGS 108**: TBD 
-
-Note to all students: For Fall 2020, I will not require any physical, in-person attendance for any of my courses - lecture, discussion or lab will *all* be possible to complete remotely. Please make the housing decision that is best for you.
+- **DSC 180 A**: Fri 10-11 AM  
+- **COGS 18**: Mon 1-3 PM   
+- **COGS 108**: Wed 2-4 PM  

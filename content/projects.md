@@ -3,6 +3,10 @@ title: "Projects"
 date: "2018-08-24"
 ---
 
+### Education Research
+
+Most recently, my research has focued on using course data, student feedback and performance, and the analysis of course interventions. This work aims to 1) help inform me how to better design my courses, 2) implement the most effective strategies in the classroom to best support and educate my students, and 3) better understand exactly what my students learn and what they take away from my courses. While numbers are limited, when I work with undergraduate students on research project, it tends to be in this area.
+
 ### Cloud-Based Data Science
 
 [Cloud-Based Data Science](https://www.clouddatascience.org/) is a free, online, educational program that sets out to help anyone who can read, write, and use a computer move into the field of data science. We've developed content and have built and carried out an in-person tutoring program to ensure we reach those who historically have not had access to data science education. With each scholar that completes the program we're working to improve the economic conditions for people locally (in Baltimore, MD) and ultimately around the world.

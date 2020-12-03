@@ -25,7 +25,7 @@ More info on my [Google Scholar profile](https://scholar.google.com/citations?us
 
 
 ### 2016
-* Ellis SE, Panitch R, West AB, Arking DE (2016) _Transcriptome analysis of cortical tissue reveals shared sets of downregulated genes in autism and schizophrenia_. Translational Psychiatry doi: 10.1038/tp.2016.87 [[link]](http://www.nature.com/tp/journal/v6/n5/abs/tp201687a.html)
+* Ellis SE, Panitch R, West AB, Arking DE (2016) _Transcriptome analysis of cortical tissue reveals shared sets of downregulated genes in autism and schizophrenia_. Translational Psychiatry doi: 10.1038/tp.2016.87 [[link]](https://www.nature.com/articles/tp201687)
 
 ### 2015
 * Huang, Haritunas, Okou, et al. (2015) _Characterization of genetic loci that affect susceptibility to inflammatory bowel diseases in African Americans_. Gastroenterolgy doi: 10.1053/j.gastro.2015.07.065 [[link]](http://www.sciencedirect.com/science/article/pii/S0016508515011038)
