@@ -5,6 +5,10 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2020
+
+* Donoghue T, Voytek B, and Ellis SE (2020). _Teaching Creative and Practical Data Science at Scale._ Journal of Statistics Education [[link]](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1860725)
+
 ### 2019
 
 * Madugundu AK, Hyun Na C, Nirujogi RS, Reunuse S, Kim KP, Burns KH, Langmead B, Ellis SE, Collado-Torres L, Halushka MK, Kim M, Pandey A (2019) _Integrated Transcriptomic and Proteomic Analysis of Primary Human Umbilical Vein Endothelial cells._ Proteomics. [[link]](https://doi.org/10.1002/pmic.201800315)

@@ -8,7 +8,7 @@ Cognitive Science Building, Room 243 <br />
 9500 Gilman Drove <br />
 La Jolla, CA 92093 <br />
 
-Office Hours (Fall 2020)  
+Office Hours (Winter 2021)  
 - **DSC 180 A**: Fri 10-11 AM  
-- **COGS 18**: Mon 1-3 PM   
-- **COGS 108**: Wed 2-4 PM  
+- **COGS 18**: Fri 11-1 PM   
+- **COGS 108**: Fri 2-4 PM  
