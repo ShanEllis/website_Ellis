@@ -5,7 +5,7 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
-### 2020
+### 2021
 
 * Donoghue T, Voytek B, and Ellis SE (2020). _Teaching Creative and Practical Data Science at Scale._ Journal of Statistics Education [[link]](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1860725)
 
