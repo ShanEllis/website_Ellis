@@ -3,6 +3,11 @@ title: "Talks & Workshops"
 date: "2018-08-24"
 ---
 
+### 2021
+
+* _Prof Ellis’ path to data science (education)_ (CSSG - San Diego, CA) [[slides](https://docs.google.com/presentation/d/11HjhUpCmv7SpH_9Q2f3_l7ePrACVAeO-SR5Oi5b9q3M/edit?usp=sharing)]
+
+
 ### 2020
 
 * _The {Art} of Effective Data Viz_ (Data Science Alliance Data Skills - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1wT9M4J2O72s_pbcoqmaNLgBQJIUi2SzmvSmULmOWbSM/edit?usp=sharing)][[padlet](https://bit.ly/dsa_viz)][[talk](https://youtu.be/VcMnO6ArKOI)]
