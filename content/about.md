@@ -36,7 +36,7 @@ When I'm not busy analyzing data, cursing myself for a bug in my code, or teachi
 
 ---
 
-Fore more information, my full CV can be found [here](../../CV/Ellis_CV.pdf).
+For more information, my full CV can be found [here](../../CV/Ellis_CV.pdf).
 
 
 <center><img src="http://ghchart.rshah.org/4b0082/ShanEllis" alt="Shannon Ellis' Github chart" /, width = "80%", height = "80%"></a></center>
