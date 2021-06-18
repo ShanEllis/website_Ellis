@@ -10,7 +10,7 @@ tags:
   - analysis
 ---
 
-I've written previously about teaching [COGS 18](https://cogs18.github.io/intro.html), an introductory programming course at UC San Diego [here](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) and [here](http://www.shanellis.com/blog/improvement-in-teaching-intro-programming/). After the success I had [noted in 2020](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) with more students reporting they had achieved the more vexxing course objectives (debugging, command line, best practices), I wanted to see where things stood after teaching this course all three quarters this past 2020-2021 academic year.
+I've written previously about teaching [COGS 18](https://cogs18.github.io/intro.html), an introductory programming course at UC San Diego [here](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) and [here](http://www.shanellis.com/blog/improvement-in-teaching-intro-programming/). After the success I had [noted in 2020](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) with more students reporting they had achieved the more vexing course objectives (debugging, command line, best practices), I wanted to see where things stood after teaching this course all three quarters this past 2020-2021 academic year.
 
 # Course Objectives
 
@@ -79,7 +79,7 @@ ggplot(df, aes(`How comfortable are you with programming in Python?`)) +
 
 # Course Objective Attainment
 
-At a more granular level when I ask students "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?" and then list each of the course's course objectives (in addition to a "None of these" option), the plot below summarizes the average across students each quarter for each course obejctive:
+At a more granular level when I ask students "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?" and then list each of the course's course objectives (in addition to a "None of these" option), the plot below summarizes the average across students each quarter for each course objective:
 
 ```{r}
 objectives <- df %>% 
@@ -111,7 +111,7 @@ scale_x_discrete(expand=expansion(mult = c(0, 0.12),
   theme_classic(base_size=14) +
   labs(y = "% of Responses",
        x = "quarter",
-       title = "Trends in Course Objective achievment over time") +
+       title = "Trends in Course Objective achievement over time") +
   theme(title = element_text(size=10),
         axis.title = element_text(size=12),
         plot.title.position = "plot")
@@ -150,7 +150,7 @@ scale_x_discrete(expand=expansion(mult = c(0, 0.12),
         plot.title.position = "plot")
 ```
 
-In coming quarters, staff and I have discussed moving it even earlier and giving more practice will help students with their debugging skils further. 
+In coming quarters, staff and I have discussed moving it even earlier and giving more practice will help students with their debugging skills further. 
 
 ## Room For Improvement
 
