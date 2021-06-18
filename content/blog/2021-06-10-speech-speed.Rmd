@@ -95,7 +95,7 @@ ggplot(df, aes(x=fct_relevel(speech, toorder), fill=speech)) +
 Here, I'm most concerned with the blue bars - students who say they "Strongly Agree" or "Somewhat Agree" to the statement "Prof Ellis speaks too quickly." It was reassuring that it does not seems to be an overwhelming issue for my students at large, but I still wanted to address it. I figured a small improvement each quarter would be my goal, and I have now asked this question in COGS 108 for three consecutive quarters: Fall 2020, Winter 2021, and Spring 2021, enabling me to determine if I've met my goal. 
 
 ```{r}
-ggplot(summ, aes(x = quarter, y=perc, fill=speech)) +
+p <- ggplot(summ, aes(x = quarter, y=perc, fill=speech)) +
   geom_bar(position="fill", stat="identity", colour = "white") +
   labs(title = "Prof Ellis speaks too quickly.",
        y = "% of Responses") +
@@ -105,7 +105,9 @@ ggplot(summ, aes(x = quarter, y=perc, fill=speech)) +
   coord_flip() + 
   theme_classic(base_size = 14) + 
   theme(plot.title.position = "plot",
-        axis.title.y = element_blank())
+        axis.title.y = element_blank(),
+        legend.title = element_blank())
+p
 
 vals <- summ %>% filter(str_detect(speech, "Agree"))
 ```

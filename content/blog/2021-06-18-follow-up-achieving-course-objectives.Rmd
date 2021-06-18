@@ -1,0 +1,202 @@
+---
+title: Course Objective Achievement (Follow Up)
+author: Shannon Ellis
+date: '2021-06-18'
+slug: follow-up-achieving-course-objectives
+categories:
+  - python
+  - education
+tags:
+  - analysis
+---
+
+I've written previously about teaching [COGS 18](https://cogs18.github.io/intro.html), an introductory programming course at UC San Diego [here](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) and [here](http://www.shanellis.com/blog/improvement-in-teaching-intro-programming/). After the success I had [noted in 2020](http://www.shanellis.com/blog/achieving-course-objectives-in-an-intro-programming-course/) with more students reporting they had achieved the more vexxing course objectives (debugging, command line, best practices), I wanted to see where things stood after teaching this course all three quarters this past 2020-2021 academic year.
+
+# Course Objectives
+
+As noted elsewhere, I set out with six course objectives:
+
+1. Program at an introductory level in the Python programming language
+1. Read basic Python programs, recognizing the structures they use and be able to explain how they work
+1. Solve basic problems using programmatic solutions
+1. Write and debug small Python programs
+1. Execute Python programs on your local computer, using notebooks and the command line
+1. Describe and implement best practices in Python, keeping in mind that programming is done by and for humans
+
+```{r setup, message = FALSE, warning=FALSE, echo = FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE, fig.width = 7)
+library(tidyverse)
+library(googlesheets)
+library(reshape2)
+library(directlabels)
+```
+
+
+```{r read-data}
+df_sp19 <- read_csv("cogs18_data/cogs18_sp19.csv") %>% 
+  mutate(quarter = 'sp19') %>% 
+  rename("Check all that apply: After COGS 18, which of the following skills do you feel you possess?" = "Check all that apply: After COGS18, which of the following skills do you feel you possess?")
+
+df_fa19 <- read_csv("cogs18_data/cogs18_fa19.csv") %>% 
+  mutate(quarter = 'fa19') 
+
+
+df_sp20 <- read_csv("cogs18_data/cogs18_sp20.csv") %>% mutate(quarter = 'sp20')
+
+df_fa20 <- read_csv("cogs18_data/cogs18_fa20.csv") %>% 
+  mutate(quarter = 'fa20') %>% 
+  rename("Check all that apply: After COGS 18, which of the following skills do you feel you possess?" = "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?")
+
+df_wi21 <- read_csv("cogs18_data/cogs18_wi21.csv") %>% 
+  mutate(quarter = 'wi21') %>% 
+  rename("Check all that apply: After COGS 18, which of the following skills do you feel you possess?" = "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?")
+
+df_sp21 <- read_csv("cogs18_data/cogs18_sp21.csv") %>% 
+  mutate(quarter = 'sp21')  %>% 
+  rename("Check all that apply: After COGS 18, which of the following skills do you feel you possess?" = "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?")
+
+df <- bind_rows(df_sp19, df_fa19, df_sp20, df_fa20, df_wi21, df_sp21)
+```
+
+# Overall Comfort
+
+First, across six quarters, here are students' responses at the end of the quarter with their comfort level in Python. 1 here indicates "What's Python?" and 5 indicates "I could teach an intro Python class!" Among `r nrow(df)` students across six quarters, most students are achieving a 3 or higher, which is what I would expect from a student after taking this course.
+
+```{r}
+ggplot(df, aes(`How comfortable are you with programming in Python?`)) + 
+  geom_bar() +
+  annotate("text", x = 5, y = 400, 
+           label = paste0("N = ", nrow(df)),
+           size = 6) +
+  theme_classic(base_size = 14) +
+  labs(y = "Number of Students",
+       title = "Most Students believe they're at least halfway between \n 'What's Python?' (1) and 'I could teach an intro Python Class!' (5)") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        plot.title.position = "plot")
+```
+
+
+# Course Objective Attainment
+
+At a more granular level when I ask students "Check all that apply: After taking COGS 18, which of the following skills do you feel you possess?" and then list each of the course's course objectives (in addition to a "None of these" option), the plot below summarizes the average across students each quarter for each course obejctive:
+
+```{r}
+objectives <- df %>% 
+  select(quarter, 
+         skills = `Check all that apply: After COGS 18, which of the following skills do you feel you possess?`) %>% 
+  mutate(`Program at Intro Level` = ifelse(grepl("Program at an introductory", skills), 1, 0),
+         `Understand Programs` = ifelse(grepl("Read basic Python programs", skills), 1, 0),
+         `Programmatic Problem Solving` = ifelse(grepl("Solve basic problems", skills), 1, 0),
+         `Write & Debug` = ifelse(grepl("Write and debug small Python programs", skills), 1, 0),
+         `Command Line` = ifelse(grepl("Execute Python programs", skills), 1, 0),
+         `Best Practices` = ifelse(grepl("Describe and implement best practices", skills), 1, 0),
+         `None` = ifelse(grepl("None of the above", skills), 1, 0),
+  ) %>% 
+  select(-skills)
+
+obj <- melt(objectives) %>% 
+  group_by(quarter, variable) %>% 
+  summarise(n = n(), count = sum(value), perc = count/n * 100) 
+
+order <- c("sp19", "fa19", "sp20", "fa20", "wi21", "sp21")
+
+
+ggplot(obj, aes(x=fct_relevel(quarter, order), y = perc, group=variable)) +
+  geom_line() +
+  geom_dl(aes(label = variable), method = list("last.qp", cex = 1, dl.trans(x = x + .15))) + 
+scale_x_discrete(expand=expansion(mult = c(0, 0.12),
+                                  add = c(0.3, 2.5))) +
+  scale_y_continuous(breaks = seq(0,100,10)) +
+  theme_classic(base_size=14) +
+  labs(y = "% of Responses",
+       x = "quarter",
+       title = "Trends in Course Objective achievment over time") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        plot.title.position = "plot")
+```
+
+In the figure above, we see that in a typical quarter all students achieve *at least one* of the course objective. We also see that students typically are more comfortable programming, reading, writing, debugging, and problem solving than they are implementing best practices or working in the command line (things we focus on in the last three weeks of the course).
+
+## Debugging
+
+The first two quarters I taught this course, I realized that students were struggling with debugging skills. To address this, I made two changes in Spring 2020: 1) I did way more live coding, including making mistakes, discussing them and how to address them focusing on issues students tend to make and 2) Moved the debugging lecture from week 7 to week 3. Hopefully these two changes are what explain the 10% increase we see in students saying they are comfortable debugging.
+
+```{r}
+ggplot(obj, aes(x=fct_relevel(quarter, order), y = perc, group=variable)) +
+  geom_line() +
+  geom_line(data = subset(obj, variable == 'Write & Debug'), 
+            size = 1.5, color = 'dodgerblue') +
+  geom_point(data = subset(obj, variable == 'Write & Debug'), 
+            size = 1.5, color = 'dodgerblue') +
+  geom_text(data = subset(obj, variable == 'Write & Debug'),
+            aes(label = round(perc, 0), size = 1.5), 
+            show.legend = FALSE, 
+            color = 'dodgerblue',
+            nudge_y = -3) +
+
+  # geom_text(data = subset(obj, variable == 'Command Line')) + 
+  geom_dl(aes(label = variable), method = list("last.qp", cex = 1, dl.trans(x = x + .15))) + 
+scale_x_discrete(expand=expansion(mult = c(0, 0.12),
+                                  add = c(0.3, 2.5))) +
+  scale_y_continuous(breaks = seq(0,100,10)) +
+  theme_classic(base_size=14) +
+  labs(y = "% of Responses",
+       x = "quarter",
+       title = "Steady improvement in Debugging over time") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        plot.title.position = "plot")
+```
+
+In coming quarters, staff and I have discussed moving it even earlier and giving more practice will help students with their debugging skils further. 
+
+## Room For Improvement
+
+[Previously](http://www.shanellis.com/blog/improvement-in-teaching-intro-programming/) I had patted myself on the back a little bit about how I was doing a better job achieving the harder to attain course objectives (best practices, command line); however, as we see above and as highlighted below, in the most recent quarter, Sp21, the numbers have almost reverted back to what students reported in Spring 2019
+
+```{r}
+ggplot(obj, aes(x=fct_relevel(quarter, order), y = perc, group=variable)) +
+  geom_line() +
+  geom_line(data = subset(obj, variable == 'Best Practices'), 
+            size = 1.5, color = '#f15351') +
+  geom_point(data = subset(obj, variable == 'Best Practices'), 
+            size = 1.5, color = '#f15351') +
+  geom_line(data = subset(obj, variable == 'Command Line'), 
+            size = 1.5, color = '#f15351') + 
+  geom_point(data = subset(obj, variable == 'Command Line'), 
+            size = 1.5, color = '#f15351') + 
+  geom_text(data = subset(obj, variable == 'Command Line'),
+            aes(label = round(perc, 0), size = 1.5), 
+            show.legend = FALSE, 
+            color = '#f15351',
+            nudge_y = -5) +
+  geom_text(data = subset(obj, variable == 'Best Practices'),
+            aes(label = round(perc, 0), size = 1.5), 
+            show.legend = FALSE, 
+            color = '#f15351',
+            nudge_y = 3.5) +
+  # geom_text(data = subset(obj, variable == 'Command Line')) + 
+  geom_dl(aes(label = variable), method = list("last.qp", cex = 1, dl.trans(x = x + .15))) + 
+scale_x_discrete(expand=expansion(mult = c(0, 0.12),
+                                  add = c(0.3, 2.5))) +
+  scale_y_continuous(breaks = seq(0,100,10)) +
+  theme_classic(base_size=14) +
+  labs(y = "% of Responses",
+       x = "quarter",
+       title = "Some improvement in achieving Best Practices & Command Line course objectives over time") +
+  theme(title = element_text(size=10),
+        axis.title = element_text(size=12),
+        plot.title.position = "plot")
+```
+
+### What Does This Mean?
+
+I have a number of hypotheses. 
+
+The first is the fact that Spring 2021 was our fourth quarter learning remotely. Students had been learning online for more than a year. I saw attendance dip. I saw engagement decrease, particularly in the last few weeks of the course. In fact, many students didn't do the command line or code style/testing labs where they would have gotten the most practice with these topics. Of course, this is what I hope is going on, as it's not indicative of issues with the course/my teaching and because when we return to campus in the Fall (fingers crossed!) this will take care of itself, if this is truly what was going on. 
+
+Second, I worked with an undergraduate student to start digging into these data a bit more this past quarter, and one of the points he made after looking at the data was that the wording is confusing in a number of these course objectives and students may not know what they mean, highlighting "keeping in mind that programming is done by and for humans" as being potentially confusing. I'm going to revisit my course objectives and ensure that the wording is clear and the objectives all reflect the goals I have for students in COGS 18. 
+
+Third, the major and year of study breakdown of students enrolled in this course has varied *a ton* from one quarter to the next. I'll delve into these data soon to determine whether this is something that needs further addressing.

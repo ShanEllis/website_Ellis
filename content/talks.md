@@ -5,6 +5,8 @@ date: "2018-08-24"
 
 ### 2021
 
+* _Capstone and Project-Based Data Science Courses 
+at UC San Diego_ (National Workshop on Data Science Education - Berkeley, CA) [[slides](https://docs.google.com/presentation/d/1u-jYAQlBVhYFI5ammCznYjblpxtdLBR4k_hCLfkscoc/edit?usp=sharing)]
 * _Prof Ellis’ path to data science (education)_ (CSSG - San Diego, CA) [[slides](https://docs.google.com/presentation/d/11HjhUpCmv7SpH_9Q2f3_l7ePrACVAeO-SR5Oi5b9q3M/edit?usp=sharing)]
 * _Crafting a Data Science Curriculum_ (ACM AI - San Diego, CA) [[slides](https://docs.google.com/presentation/d/19zHdoMg1fVYl4W67AROC6WR4rIGn80RLJfCNVk6KeaA/edit?usp=sharing)]
 
