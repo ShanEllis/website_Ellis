@@ -9,5 +9,5 @@ Cognitive Science Building, Room 243 <br />
 La Jolla, CA 92093 <br />
 
 Office Hours (Fall 2021)  
-- **COGS 18**: Coming Soon  
-- **COGS 137**: Coming Soon
+- **COGS 137**: Mon 10AM-12 PM  
+- **COGS 18**: Fri 10:30 AM-12:30 PM  
