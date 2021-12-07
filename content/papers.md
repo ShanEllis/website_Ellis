@@ -7,7 +7,13 @@ More info on my [Google Scholar profile](https://scholar.google.com/citations?us
 
 ### 2021
 
-* Donoghue T, Voytek B, and Ellis SE (2020). _Teaching Creative and Practical Data Science at Scale._ Journal of Statistics Education [[link]](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1860725)
+* Hubbard JA, Hoffman MA, Ellis SE, Sobolesky PM, Smith BE, Suhandynata RT, Sones EG, Sanford SK, Umlauf A, Huestis MA, Grelotti DJ, Grant I, Marcotte RD, and Fitzgerald RL (2021). _Biomarkers of Recent Cannabis Use in Blood, Oral Fluid and Breath._ Journal of Analytical Toxicology. [[link]](https://doi.org/10.1093/jat/bkab080)
+* Hoffman MA, Hubbard JA, Sobolesky PM, Smith BE, Suhandynata RT, Sanford S, Sones EG, Ellis SE, Umlauf A, Huestis MA, Grelotti DJ, Grant I, Marcotte TD, and Fitzgerald RL (2021). _Blood and Oral Fluid Cannabinoid Profiles of Frequent and Occasional Cannabis Smokers._ Journal of Analytical Toxicology. [[link]](https://doi.org/10.1093/jat/bkab078)
+
+
+### 2020
+
+* Donoghue T, Voytek B, and Ellis SE (2020). _Teaching Creative and Practical Data Science at Scale._ Journal of Statistics Education and Data Science. [[link]](https://www.tandfonline.com/doi/full/10.1080/10691898.2020.1860725)
 
 ### 2019
 
