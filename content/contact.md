@@ -9,4 +9,4 @@ Cognitive Science Building, Room 243 <br />
 La Jolla, CA 92093 <br />
 
 Office Hours (Winter 2022)  
-- **COGS 18**: Mon 9-11 AM  
+- **COGS 18**: Mon 9-10 AM (Zoom); Wed 9:30-10:30 (Courtyard in center of CSB)
