@@ -2,5 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
-public/*
+/public/
+/resources/
 .httr-oauth
+.DS_Store
+Thumbs.db
+.hugo_build.lock

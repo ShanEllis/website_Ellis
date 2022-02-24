@@ -5,7 +5,7 @@ theme = "hugo-lithium"
 enableEmoji = true
 googleAnalytics = "UA-124592750-1"
 disqusShortname = "shanellis"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
 [permalinks]
     post = "/:year/:month/:day/:slug/"
@@ -61,3 +61,8 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
     height = 50
     alt = "Logo"
 
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
