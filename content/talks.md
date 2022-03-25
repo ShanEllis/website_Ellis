@@ -6,7 +6,7 @@ date: "2018-08-24"
 ### 2022
 
 * _Structuring & Managing Group Projects 
-in Large-Enrollment Undergraduate Data Science Course_ (Toronto Reproducibility Workshop - Toronto, Canada) [[slides](https://docs.google.com/presentation/d/12mSgStMmn6YlBg_sN4GQjv9TbS2DPF_t4xIvTLcbwOw/edit?usp=sharing)]
+in Large-Enrollment Undergraduate Data Science Course_ (Toronto Reproducibility Workshop - Toronto, Canada) [[slides](https://docs.google.com/presentation/d/12mSgStMmn6YlBg_sN4GQjv9TbS2DPF_t4xIvTLcbwOw/edit?usp=sharing)][[talk](https://youtu.be/oG6YXIuUny0)]
 
 
 ### 2021
