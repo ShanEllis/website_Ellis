@@ -5,6 +5,11 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2022
+
+* Donoghue T, Voytek B, and Ellis SE. _Course Materials for Data Science in Practice_. The Journal of Open Source Education. [[link]](https://jose.theoj.org/papers/10.21105/jose.00121) 
+* Lau S, Eldridge J, Ellis SE, Fraenkel A, Langlois M, Rampure S, Tiefenbruck J, and Guo P. _The Challenges of Evolving Technical Courses at Scale: Four Case Studies of Updating Large Data Science Courses._  ACM Conference on Learning @ Scale (L@S). [[link]](https://www.samlau.me/pubs/Challenges-of-Evolving-Data-Courses_L@S-2022.pdf)
+
 ### 2021
 
 * Hubbard JA, Hoffman MA, Ellis SE, Sobolesky PM, Smith BE, Suhandynata RT, Sones EG, Sanford SK, Umlauf A, Huestis MA, Grelotti DJ, Grant I, Marcotte RD, and Fitzgerald RL (2021). _Biomarkers of Recent Cannabis Use in Blood, Oral Fluid and Breath._ Journal of Analytical Toxicology. [[link]](https://doi.org/10.1093/jat/bkab080)
