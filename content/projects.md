@@ -5,7 +5,7 @@ date: "2018-08-24"
 
 ### Education Research
 
-Most recently, my research has focued on using course data, student feedback and performance, and the analysis of course interventions. This work aims to 1) help inform me how to better design my courses, 2) implement the most effective strategies in the classroom to best support and educate my students, and 3) better understand exactly what my students learn and what they take away from my courses. While numbers are limited, when I work with undergraduate students on research project, it tends to be in this area.
+Most recently, my research has focused on using course data, student feedback and performance, and the analysis of course interventions. This work aims to 1) help inform me how to better design my courses, 2) implement the most effective strategies in the classroom to best support and educate my students, and 3) better understand exactly what my students learn and what they take away from my courses. While numbers are limited, when I work with undergraduate students on research project, it tends to be in this area.
 
 ### Cloud-Based Data Science
 
