@@ -7,7 +7,7 @@ date: "2018-08-24"
 
 
 #### I'm on the waitlist in position X in your course. Will I be enrolled?  
-While our staff handle the waitlist, and I don't have access to it, I can tell you that typically ~3-5 people are let off each section's waitlist each quarter in COGS9, COGS 18, COGS 108. Additional sections will *not* be added. 
+While our staff handle the waitlist and I don't have access to it, I can tell you that typically ~3-5 people are let off each section's waitlist each quarter in COGS9, COGS 18, COGS 108, and COGS 137. Additional sections will *not* be added. 
 
 I absolutely understand why you all ask for this - I know how much you all struggle to get your schedules to work. But, I am but one person with hundreds of students each quarter. The more students, the more questions I get, the more projects there are to grade, the more staff there are to manage and advise (none of which scales), and, as a result, the less I sleep and the less there is to give to each student. I already teach _so_ many students, and I care about doing that well. So, while I understand why you ask, I just wanted to explain why I cannot clear the waitlist. Hope this helps explain!
 
@@ -15,9 +15,6 @@ I absolutely understand why you all ask for this - I know how much you all strug
 #### Can I get a recommendation letter?  
 
 You can definitely ask! Note that the earlier you ask the better (by the end of October, it's a no for almost every request). But, also know that I try to prioritize writing _strong_ recommendation letters, and I can only do this for students I know well. If we have never had a conversation, I will typically decline your request. I write ~40 recommendation letters each letter writing season, and this takes a lot of time. So, while I _hate_ turning students down each quarter, I have to do so to ensure that I have time to get the letters I've agreed to write written well. I know that it can be hard to find letter writers at UCSD, so I do my best to respond to email requests quickly, regardless of whether it's a yes or a no.
-
-That said, during Fall 2022, I'll be on parental leave, so my ability to write recommendation letters will be less than typical. I'll prioritize writing letters for students I know particularly well.
-
 
 #### Can I do research with you?  
 
