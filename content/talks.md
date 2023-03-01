@@ -3,6 +3,10 @@ title: "Talks & Workshops"
 date: "2018-08-24"
 ---
 
+### 2023
+
+* *Life Lessons That Have Nothing to Do with Data or Science* (DS3 - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1luHELHe5kdQYsXfe-amfL0vjFBD57yfV9LhHx1-RAKc/edit?usp=sharing)]
+
 ### 2022
 
 * _Structuring & Managing Group Projects 
