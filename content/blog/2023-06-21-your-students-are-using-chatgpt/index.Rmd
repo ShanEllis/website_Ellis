@@ -53,7 +53,7 @@ Of the students who *have* used ChatGPT for schoolwork, they vary in their frequ
 
 #### COGS 18
 
-```{r, include=FALSE}
+```{r}
 plot_function <- function(df){
   df %>% 
   mutate(often = fct_relevel(`How often do you use ChatGPT (or a similar technology) for schoolwork?`, "Frequently (most days)", after=3)) %>%
@@ -70,13 +70,13 @@ ggplot(aes(x=often)) +
 }
 ```
 
-```{r, fig.height=2}
+```{r, fig.height=2, fig.show=TRUE}
 plot_function(cogs18)
 ```
 
 #### COGS 9
 
-```{r, fig.height=2}
+```{r, fig.height=2, fig.show=TRUE}
 plot_function(cogs9)
 ```
 
