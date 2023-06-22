@@ -71,13 +71,13 @@ ggplot(aes(x=often)) +
 ```
 
 ```{r, fig.height=2, fig.show=TRUE}
-plot_function(cogs18)
+print(plot_function(cogs18))
 ```
 
 #### COGS 9
 
 ```{r, fig.height=2, fig.show=TRUE}
-plot_function(cogs9)
+print(plot_function(cogs9))
 ```
 
 
@@ -145,7 +145,9 @@ cogs9 %>%
 
 ## Discussion
 
-This is just a quick summary of what my students said in two courses in a single academic term at a single university in the US. It's certainly not a deep-dive or rigorous study, but lots of people are working on or have already published these. For example, if you're looking to read more about what people are thinking about when it comes to teaching computing with AI[^1], considering whether AI is the new pair-programmer [^2], or want to know more about how well these LLMs explain their code (in comparison to humans) [^3], there is actual research out there. Given all of this, I'm excited to re-work my courses going forward to make better use of this new technology while continuing to try and figure out how to ensure my students are *actually* learning while teaching about ethics and fostering an environment where students act with integrity.
+Overall, I was really happy with my students' responses recognizing both the strengths and limitations of these technologies. Generally, I do believe my students *want* to learn, which is important. However, I also know that my students are often time-poor and under a lot of stress. In these situations, I worry about the decisions my students will make and the shortcuts they'll be willing to accept. That said, I'm excited to re-work my courses going forward to make better use of this new technology while continuing to try and figure out how to ensure my students are *actually* learning while teaching about ethics and fostering an environment where students act with integrity.
+
+Also, this is just a quick summary of what my students said in two courses in a single academic term at a single university in the US.  It's certainly not a deep-dive or rigorous study, but lots of people are working on or have already published these. For example, if you're looking to read more about what people are thinking about when it comes to teaching computing with AI[^1], considering whether AI is the new pair-programmer [^2], or want to know more about how well these LLMs explain their code (in comparison to humans) [^3], there is actual research out there. 
 
 [^1]: https://arxiv.org/pdf/2306.02608.pdf
 [^2]: https://arxiv.org/pdf/2306.05153.pdf
