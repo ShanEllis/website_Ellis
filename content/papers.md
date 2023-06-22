@@ -5,6 +5,9 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2023
+* _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_ Clinical Chemistry. [[link](https://academic.oup.com/clinchem/advance-article-abstract/doi/10.1093/clinchem/hvad054/7179849?utm_source=advanceaccess&utm_campaign=clinchem&utm_medium=email)]
+
 ### 2022
 
 * Donoghue T, Voytek B, and Ellis SE. _Course Materials for Data Science in Practice_. The Journal of Open Source Education. [[link]](https://jose.theoj.org/papers/10.21105/jose.00121) 

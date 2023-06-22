@@ -1,0 +1,152 @@
+---
+title: Your students are using ChatGPT
+author: Shannon Ellis
+date: '2023-06-21'
+slug: your-students-are-using-chatgpt
+categories:
+  - education
+tags:
+  - classroom
+  - ethics
+  - ai
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+
+library(tidyverse)
+library(googlesheets4)
+library(kableExtra)
+
+options(gargle_oauth_email = "sellis@ucsd.edu")
+options(knitr.table.format = "html") 
+```
+
+I'm probably not the first to suggest that your students are using ChatGPT, but if you're not yet convinced, I'm here to give you a glimpse into how frequently and in what ways your students may be using ChatGPT. This will be most pertinent to those teaching data science and/or programming courses, but I'd venture to guess much of it's applicable in the humanities and elsewhere as well.
+
+## tl;dr Summary
+
+- 60% and 72% of students in my large-enrollment data science and programming courses (respectively) reported using an AI-based LLM for school tasks
+- Daily use is not yet typical
+- Students more likely to perceive AI-based LLMs as supporting their learning than hindering it
+
+## Introduction 
+
+This past Spring term I taught two courses at UC San Diego: **[COGS 18](https://cogs18.github.io/intro.html) Introduction to Python** and **[COGS 9](https://cogs9.github.io/ucsd-cogs9/) Introduction to Data Science**. Very briefly, **COGS 18** is an intro-level undergraduate, programming course (think: CS1). The *vast* majority of students are either cognitive science or psychology majors, for whom this (or an equivalent programming course) is required. **COGS 9** is an intro-level, undergraduate survey course focused on introducing the concepts in data science to students while requiring reading, critical thinking, a deep consideration of ethics, and effective communication. This class is required of data science majors and minors; the majority of students are math, data science, economics, or cognitive science majors. This past term there were 345 students in COGS 18 and 295 students in COGS 9. In both courses, LLMs (like ChatGPT) were discussed in class and students were allowed to utilize them as a tool to support their learning throughout the term. In COGS 18, we had two in-class, closed-book exams where LLMs/the internet were not used/accessible.
+
+```{r cache=TRUE}
+cogs18 <- read_sheet('1BN11yA4Xc1P5Hgaj0BIXKiwvsf1nLXEcq6a963ZBhyQ')
+cogs9 <- read_sheet('1v5fJOseRuitacgkE-R473dPd0YUH-Uvamz2J4aqUUfw')
+```
+
+## Post-course Survey
+
+At the end of the term, I included the same set of questions about students' use of LLMs in their learning in both courses on their post-course surveys. Completing this survey was optional, but a small amount of extra credit was offered for completion. Before releasing the survey, I reminded students in class that ChatGPT *was* allowed in these courses and that I'm curious about their use and not trying to "catch" anyone; however, I'd imagine (as with all survey data) there would be some hesitancy in students responding with full honesty in some cases. In **COGS 18, 223 students (64%) completed the survey; in COGS 9, 215 students did so (73%)**.
+
+In response to the question **Have you used an AI-based LLM (i.e. ChatGPT or Copilot) for school tasks yet** (either in COGS X OR another course)?, **161 (72%) students responded "Yes" in COGS 18**; **130 (60%) responded "Yes" in COGS 9.**
+
+Those who responded "Yes" were asked a number of additional questions, the responses to which are summarized/included below. 
+
+### How often do you use ChatGPT (or a similar technology) for schoolwork?
+
+Of the students who *have* used ChatGPT for schoolwork, they vary in their frequency of use, as we see below. I'll highlight that in a technical programming course (COGS 18), we see a slight shift to more frequent use. Of course there are many reasons why this could be the case - different students, different majors, etc. - but I'd venture to guess that in most programming courses, its use is pretty regular by a large fraction of students. I'll also note we saw office hours attendance and online questions asked nosedive this quarter. Our best guess: students are getting their answers elsewhere...via AI-based LLMs.
+
+#### COGS 18
+
+```{r, include=FALSE}
+plot_function <- function(df){
+  df %>% 
+  mutate(often = fct_relevel(`How often do you use ChatGPT (or a similar technology) for schoolwork?`, "Frequently (most days)", after=3)) %>%
+  filter(!is.na(often)) %>% 
+ggplot(aes(x=often)) + 
+  geom_bar() +
+  theme_classic(base_size = 14) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 12)) +
+  theme(plot.title.position = "plot",
+        axis.title = element_blank(),
+        axis.text.y = element_blank(), 
+        axis.ticks = element_blank()) +
+  geom_text(stat='count', aes(label=..count..), vjust=1.7, size = 4, color="white")
+}
+```
+
+```{r, fig.height=2}
+plot_function(cogs18)
+```
+
+#### COGS 9
+
+```{r, fig.height=2}
+plot_function(cogs9)
+```
+
+
+### How do you think ChatGPT (or similar technologies) has helped you in your studies?
+
+When answering this question students highlight a lot of really great ways in which tools like ChatGPT can help them: clarifications, explanations, rewording/improving clarity of student writing, testing their work, removing anxiety, getting started, additional practice problems, explanations, quick access to information, etc. 
+
+Full student responses from each class:
+
+<details><summary>COGS 18 </summary>
+
+```{r, results="asis"}
+cogs18 %>%
+  select(`How do you think ChatGPT (or similar technologies) has helped you in your studies?` =`(optional) How do you think ChatGPT (or similar technologies) has helped you in your studies?`) %>% 
+  filter(!is.na(`How do you think ChatGPT (or similar technologies) has helped you in your studies?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+</details>
+
+
+<details><summary>COGS 9 </summary>
+
+```{r, results="asis"}
+cogs9 %>%
+  select(`How do you think ChatGPT (or similar technologies) has helped you in your studies?` =`(optional) How do you think ChatGPT (or similar technologies) has helped you in your studies?`) %>% 
+  filter(!is.na(`How do you think ChatGPT (or similar technologies) has helped you in your studies?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+</details>
+
+### How do you think ChatGPT (or similar technologies) has limited your ability to learn?
+
+In response to this question, *many* students said that it has not limited their ability to learn. Others said that they've become too reliant on it, that they go to ChatGPT immediately rather than thinking on their own, that they accept generic responses too easily/limits creativity, and that it's not always correct.
+
+Full student responses from each class:
+
+<details><summary>COGS 18 </summary>
+
+```{r, results="asis"}
+cogs18 %>%
+  select(`How do you think ChatGPT (or similar technologies) has limited your ability to learn?` =`(optional) How do you think ChatGPT (or similar technologies) has limited your ability to learn?`) %>% 
+  filter(!is.na(`How do you think ChatGPT (or similar technologies) has limited your ability to learn?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+</details>
+
+<details><summary>COGS 9 </summary>
+
+```{r, results="asis"}
+cogs9 %>%
+  select(`How do you think ChatGPT (or similar technologies) has limited your ability to learn?` =`(optional) How do you think ChatGPT (or similar technologies) has limited your ability to learn?`) %>% 
+  filter(!is.na(`How do you think ChatGPT (or similar technologies) has limited your ability to learn?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+
+</details>
+
+## Discussion
+
+This is just a quick summary of what my students said in two courses in a single academic term at a single university in the US. It's certainly not a deep-dive or rigorous study, but lots of people are working on or have already published these. For example, if you're looking to read more about what people are thinking about when it comes to teaching computing with AI[^1], considering whether AI is the new pair-programmer [^2], or want to know more about how well these LLMs explain their code (in comparison to humans) [^3], there is actual research out there. Given all of this, I'm excited to re-work my courses going forward to make better use of this new technology while continuing to try and figure out how to ensure my students are *actually* learning while teaching about ethics and fostering an environment where students act with integrity.
+
+[^1]: https://arxiv.org/pdf/2306.02608.pdf
+[^2]: https://arxiv.org/pdf/2306.05153.pdf
+[^3]: https://arxiv.org/pdf/2304.03938.pdf
