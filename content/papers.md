@@ -6,7 +6,7 @@ date: "2018-08-24"
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
 ### 2023
-* _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_ Clinical Chemistry. [[link](https://academic.oup.com/clinchem/advance-article-abstract/doi/10.1093/clinchem/hvad054/7179849?utm_source=advanceaccess&utm_campaign=clinchem&utm_medium=email)]
+* Fitzerald et al. _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_ Clinical Chemistry. [[link](https://academic.oup.com/clinchem/article/69/7/724/7179849)]
 
 ### 2022
 
@@ -26,6 +26,9 @@ More info on my [Google Scholar profile](https://scholar.google.com/citations?us
 ### 2019
 
 * Madugundu AK, Hyun Na C, Nirujogi RS, Reunuse S, Kim KP, Burns KH, Langmead B, Ellis SE, Collado-Torres L, Halushka MK, Kim M, Pandey A (2019) _Integrated Transcriptomic and Proteomic Analysis of Primary Human Umbilical Vein Endothelial cells._ Proteomics. [[link]](https://doi.org/10.1002/pmic.201800315)
+
+* Moriah E. Katt, Lakyn N. Mayo, Shannon E. Ellis, Vasiliki Mahairaki, Jeffrey D. Rothstein, Linzhao Cheng & Peter C. Searson (2019) _The role of mutations associated with familial neurodegenerative disorders on blood–brain barrier function in an iPSC model._ Fluids and Barriers of the CNS. [[link](https://fluidsbarrierscns.biomedcentral.com/articles/10.1186/s12987-019-0139-4)]
+
 
 ### 2018
  
