@@ -7,7 +7,7 @@ date: "2018-10-18"
 ### 2018-current: Assistant (2018-2022) & Associate (2022-current) Teaching Professor
 - __Instructor__ | [COGS 18: Introduction to Python](https://cogs18.github.io) | UC San Diego (Sp19, Fa19, Sp20, Su20, Fa20, Wi21, Sp21, Fa21, Wi22, Sp23)
 - __Instructor__ | [COGS 137: Practical Data Science in R](https://cogs137.github.io/website/) | UC San Diego (Fa21, Wi23, Fa23)
-- __Instructor__ | [COGS 108: Data Science in Practice](https://github.com/COGS108) | UC San Diego (Sp19, Wi20, Sp20, Fa20, Wi21, Sp21)
+- __Instructor__ | [COGS 108: Data Science in Practice](https://github.com/COGS108) | UC San Diego (Sp19, Wi20, Sp20, Fa20, Wi21, Sp21, Wi24)
 - __Instructor__ | [COGS 9: Introduction to Data Science](https://cogs9.github.io/ucsd-cogs9) | UC San Diego (Wi19, Fa19, Sp23) 
 - __Instructor__ | [COGS 169: Genetic Information for Behavior: From Single Cells to Mammals](https://cogs169.github.io/cogs169) | UC San Diego (Fa23)
 
