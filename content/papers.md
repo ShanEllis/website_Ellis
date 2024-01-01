@@ -6,7 +6,8 @@ date: "2018-08-24"
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
 ### 2023
-* Fitzerald et al. _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_ Clinical Chemistry. [[link](https://academic.oup.com/clinchem/article/69/7/724/7179849)]
+* Fitzerald et al. _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_. Clinical Chemistry. [[link](https://academic.oup.com/clinchem/article/69/7/724/7179849)]
+* Leas et al. _E-commerce licensing loopholes: a case study of online shopping for tobacco products following a statewide sales restriction on flavoured tobacco in California_. Tobacco Control. [[link](https://tobaccocontrol.bmj.com/content/early/2023/11/01/tc-2023-058269)]
 
 ### 2022
 
