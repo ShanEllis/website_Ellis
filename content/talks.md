@@ -4,7 +4,7 @@ date: "2018-08-24"
 ---
 
 ### 2023
-
+* *Teaching Creative and Practical Data Science at Scale* (IMSI: Teaching and Evaluating Data Communication At Scale - Chicago, IL) [[slides](https://docs.google.com/presentation/d/1MWOE3KnFGwwkbjLEcaamF9diVBepLummpAUYXVPB-ZI/edit?usp=sharing)]
 * *DS Discovery Bootcamp* (Data Science Discovery Bootcamp - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1_Ba9OwCOrcA_TISR1z98UOFvG_drjCpNsEzGg15usEs/edit?usp=sharing)]
 * *Life Lessons That Have Nothing to Do with Data or Science* (DS3 - San Diego, CA) [[slides](https://docs.google.com/presentation/d/1luHELHe5kdQYsXfe-amfL0vjFBD57yfV9LhHx1-RAKc/edit?usp=sharing)]
 
