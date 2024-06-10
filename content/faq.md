@@ -13,19 +13,19 @@ I absolutely understand why you all ask for this - I know how much you all strug
 
 #### Can I be your TA?  
 
-For Winter 2024, all spots have currently been filled. 
+For Fall 2024, I'm teaching two smaller, upper-division courses, each of which only has a single TA. I anticipate these spots going to COGS PhD students (who are given priority).  
 
-For subsequent quarters, please know that priority is given to COGS grad students. After they are assigned spots, myself and our staff will look through anyone else who has filled out the [official application](https://cogsci.ucsd.edu/graduates/teaching-assistants/index.html). You do *not* need to email me letting me know you've applied. 
+For subsequent quarters, please know that priority is always given to COGS grad students. After they are assigned spots, myself and our staff will look through anyone else who has filled out the [official application](https://cogsci.ucsd.edu/graduates/teaching-assistants/index.html). You do *not* need to email me letting me know you've applied. 
 
 
 #### Can I get a recommendation letter?  
 
-You can definitely ask! Note that the earlier you ask the better (by the end of October, it's a no for almost every request until the Spring). But, also know that I try to prioritize writing _strong_ recommendation letters, and I can only do this for students I know well. If we have never had a conversation, I will typically decline your request. I write  recommendation letters for approx. 40 students each letter writing season, and this takes a lot of time. So, while I _hate_ turning students down each quarter, I have to do so to ensure that I have time to get the letters I've agreed to write written well. I know that it can be hard to find letter writers at UCSD, so I do my best to respond to email requests quickly, regardless of whether it's a yes or a no.
+You can definitely ask! Note that the earlier you ask the better (by the end of October, it's a no for almost every request until the Spring). But, also know that I try to prioritize writing _strong_ recommendation letters, and I can only do this for students I know well. If we have never had a conversation, I will typically decline your request. I write  recommendation letters for approx. 40 students each academic year, and this takes a lot of time. So, while I _hate_ turning students down each quarter, I have to do so to ensure that I have time to get the letters I've agreed to write written well. I know that it can be hard to find letter writers at UCSD, so I do my best to respond to email requests quickly, regardless of whether it's a yes or a no.
 
 #### Can I do research with you?  
 
-It depends - mainly on your interests and my availability (which is at capacity for the 2023-2024 academic year). I tend to mentor a few **undergraduate** students each academic year. If you are interested in education research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
+It depends - mainly on your interests and my availability (which is at capacity for through at least Fall 2024). I tend to mentor a few **undergraduate** students each academic year. If you are interested in education research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
 
-I do *not* have a research group (**no grad students or postdocs**) because I'm a teaching (rather than a research) professor. As such, my main focus is undergraduate teaching. I don't have funding nor bandwidth for supporting a graduate student the way they deserve to be mentored and advised during their graduate studies.
+I do *not* have a research group (**no grad students or postdocs**) because I'm a teaching (rather than a research) professor. As such, my main focus is undergraduate teaching. I don't have funding nor bandwidth for supporting a graduate student the way they deserve to be mentored and advised during their graduate studies at this time.
 
 
