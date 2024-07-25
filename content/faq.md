@@ -13,7 +13,7 @@ I absolutely understand why you all ask for this - I know how much you all strug
 
 #### Can I be your TA?  
 
-For Fall 2024, I'm teaching two smaller, upper-division courses, each of which only has a single TA. I anticipate these spots going to COGS PhD students (who are given priority).  
+For Fall 2024, I'm teaching two smaller, upper-division courses, each of which only has a single TA. I expect these spots will go to COGS PhD students (who are given priority).  
 
 For subsequent quarters, please know that priority is always given to COGS grad students. After they are assigned spots, myself and our staff will look through anyone else who has filled out the [official application](https://cogsci.ucsd.edu/graduates/teaching-assistants/index.html). You do *not* need to email me letting me know you've applied. 
 
@@ -24,7 +24,7 @@ You can definitely ask! Note that the earlier you ask the better (by the end of 
 
 #### Can I do research with you?  
 
-It depends - mainly on your interests and my availability (which is at capacity for through at least Fall 2024). I tend to mentor a few **undergraduate** students each academic year. If you are interested in education research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
+It depends - mainly on your interests and my availability (which is at capacity for through at least Winter 2025). I tend to mentor a few **undergraduate** students each academic year. If you are interested in education research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
 
 I do *not* have a research group (**no grad students or postdocs**) because I'm a teaching (rather than a research) professor. As such, my main focus is undergraduate teaching. I don't have funding nor bandwidth for supporting a graduate student the way they deserve to be mentored and advised during their graduate studies at this time.
 
