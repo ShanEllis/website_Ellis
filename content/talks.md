@@ -4,6 +4,7 @@ date: "2018-08-24"
 ---
 
 ### 2024
+* *Lessons Learned from 1,000 Data Science Projects* (JSM - Portland, OR) [[slides](https://docs.google.com/presentation/d/1TiG36V1DppYBuvHeDSfD27w0qDV-fx-GeIS6mOky1Qk/edit?usp=sharing)]
 * *Teaching Creative and Practical Data Science at Scale* (IMSI: Teaching and Evaluating Data Communication At Scale - Chicago, IL) [[slides](https://docs.google.com/presentation/d/1MWOE3KnFGwwkbjLEcaamF9diVBepLummpAUYXVPB-ZI/edit?usp=sharing)]
 
 ### 2023
