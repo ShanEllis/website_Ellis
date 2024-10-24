@@ -5,6 +5,11 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2024
+
+* Satybaldiyeva et al. _Derived Cannabinoid Product Availability among Online Vape Shops_. Preventative Medicine. [[link](https://www.sciencedirect.com/science/article/pii/S2211335524003255)]
+
+
 ### 2023
 
 * Fitzgerald et al. _Driving Under the Influence of Cannabis: Impact of Combining Toxicology Testing with Field Sobriety Tests_. Clinical Chemistry. [[link](https://academic.oup.com/clinchem/article/69/7/724/7179849)]
