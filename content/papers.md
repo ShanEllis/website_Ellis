@@ -5,9 +5,13 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2025
+
+* Mejorado et al. _Online Retailer Noncompliance to E-cigarette Excise Tax and Tobacco Licensing Laws_. Tobacco Control. [[paper]](https://tobaccocontrol.bmj.com/content/early/2025/02/26/tc-2024-059161)
+
 ### 2024
 
-* Harati et al. _Online Retailer Nonadherence to Age Verification, Shipping, and Flavor Restrictions on E-Cigarettes_. JAMA. [[paper](https://jamanetwork.com/journals/jama/article-abstract/2826119)] [[LA Times](https://www.latimes.com/california/story/2024-11-12/vape-deliveries-ignore-rules-meant-to-protect-minors-new-ucsd-study-finds)]
+* Harati et al. _Online Retailer Nonadherence to Age Verification, Shipping, and Flavor Restrictions on E-Cigarettes_. JAMA. [[paper](https://jamanetwork.com/journals/jama/article-abstract/2826119)] [[LA Times](https://www.latimes.com/california/story/2024-11-12/vape-deliveries-ignore-rules-meant-to-protect-minors-new-ucsd-study-finds)] [[WaPo]]( https://www.washingtonpost.com/health/2024/12/26/flavored-vapes-mail-illegal/)
 * Satybaldiyeva et al. _Derived Cannabinoid Product Availability among Online Vape Shops_. Preventative Medicine. [[paper](https://www.sciencedirect.com/science/article/pii/S2211335524003255)]
 
 

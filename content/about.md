@@ -14,7 +14,7 @@ As an Associate Teaching Professor in the [Cognitive Science](https://cogsci.ucs
 
 I currently collaborate with Eric Leas in the [Tobacco E-Commerce Lab](https://www.tobaccoecommercelab.com/team) where we study tobacco e-commerce retail practices to support policy makers.
 
-I have also recently collaborated with Robert Fitzgerald and the Clinical Chemistry Program to 1) better understand the kinetics of marijuana consumption, 2) identify a biomarker (or biomarkers) for detection of recent use, and 3) to study the effects of THC on driving. 
+I have also recently collaborated with Robert Fitzgerald and the Clinical Chemistry Program to: 1) better understand the kinetics of marijuana consumption, 2) identify a biomarker (or biomarkers) for detection of recent use, and 3) to study the effects of THC on driving. 
 
 ---
 
