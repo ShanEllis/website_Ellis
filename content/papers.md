@@ -8,6 +8,7 @@ More info on my [Google Scholar profile](https://scholar.google.com/citations?us
 ### 2025
 
 * Mejorado et al. _Online Retailer Noncompliance to E-cigarette Excise Tax and Tobacco Licensing Laws_. Tobacco Control. [[paper]](https://tobaccocontrol.bmj.com/content/early/2025/02/26/tc-2024-059161)
+* Austin et al. _Poor compliance with PACT Act shipping label requirements among online vaping retailers_. Tobacco Control.  [[paper]](https://tobaccocontrol.bmj.com/content/tobaccocontrol/early/2025/08/17/tc-2025-059580.full.pdf?ijkey=jnvJkwlDVRilEOT&keytype=ref)
 
 ### 2024
 
