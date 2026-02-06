@@ -12,7 +12,7 @@ As an Associate Teaching Professor in the [Cognitive Science](https://cogsci.ucs
 
 #### Recent Research
 
-I currently collaborate with Eric Leas in the [Tobacco E-Commerce Lab](https://www.tobaccoecommercelab.com/team) where we study tobacco e-commerce retail practices to support policy makers.
+I currently collaborate with Eric Leas in the [E-Commerce Lab](https://www.ecommercelab.health/) where we study e-commerce of regulated and emerging products.
 
 I have also recently collaborated with Robert Fitzgerald and the Clinical Chemistry Program to: 1) better understand the kinetics of marijuana consumption, 2) identify a biomarker (or biomarkers) for detection of recent use, and 3) to study the effects of THC on driving. 
 
@@ -39,7 +39,7 @@ I received my Ph.D. in human genetics from the [Institute of Genetic Medicine](h
    
 I love **analyzing data carefully** and **teaching others** how to do the same! I'm always happy to talk about teaching, data science, all things R and Python, pedagogy, and genetics.
 
-When I'm not busy analyzing data, cursing myself for a bug in my code, or teaching others how to do the same, I am always down to chat about my adorable child, beach volleyball, books, baking, biking, and great podcasts. 
+When I'm not busy analyzing data, cursing myself for a bug in my code, or teaching others how to do the same, I am always down to chat about my two adorable children, beach volleyball, books, baking, biking, and great podcasts. 
 
 ---
 

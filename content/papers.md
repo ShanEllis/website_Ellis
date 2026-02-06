@@ -5,6 +5,9 @@ date: "2018-08-24"
 
 More info on my [Google Scholar profile](https://scholar.google.com/citations?user=G5cAVdkAAAAJ&hl=en)
 
+### 2026
+* Austin et al. _Self-reported use of cannabidiol as a substitute or adjunct for approved medications_. Frontiers in Public Health. [[paper]](https://www.frontiersin.org/articles/10.3389/fpubh.2026.1720348)
+
 ### 2025
 * Liu et al. _Exploring Multimodal and Verbal Cues in Naturalistic Caregiver-Infant Joint Attention from 6 to 9 Months_. IEE International Conference on Development and Learning (ICDL). [[paper]](https://ieeexplore.ieee.org/document/11204353/)
 * Austin et al. _Poor compliance with PACT Act shipping label requirements among online vaping retailers_. Tobacco Control.  [[paper]](https://tobaccocontrol.bmj.com/content/tobaccocontrol/early/2025/08/17/tc-2025-059580.full.pdf?ijkey=jnvJkwlDVRilEOT&keytype=ref)
