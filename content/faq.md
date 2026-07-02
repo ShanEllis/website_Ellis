@@ -17,7 +17,7 @@ For Spring 2026 I will be teaching COGS 18 Introduction to Python. If you're int
 
 #### Can I be a PLA?  
 
-Pedagogy and Learning Apprentices (PLAs) were formerly referred to as IAs at UCSD. With the name change, the role has also changed. Briefly, PLAs are not allowed to grade or run section for a course (while IAs were). Rather, "PLAs gain practical experience in pedagogy, course facilitation, and academic mentorship, while supporting the learning environment of an existing course. This opportunity allows students to deepen their understanding of course content, strengthen communication and leadership skills, and gain insight into instructional design and teaching strategies." In this role, PLAs are expected to attend all class sessions and lectures, meet weekly with course staff, hold regular office hours, proctor exams and review sessions, and manage course tools. If such a role is of interest to you for a particular course, please reach out via email. 
+Pedagogy and Learning Apprentices (PLAs) were formerly referred to as IAs at UCSD. With the name change, the role has also changed. Briefly, PLAs are not allowed to grade or run section for a course (while IAs were). Rather, *"PLAs gain practical experience in pedagogy, course facilitation, and academic mentorship, while supporting the learning environment of an existing course. This opportunity allows students to deepen their understanding of course content, strengthen communication and leadership skills, and gain insight into instructional design and teaching strategies."* In this role, PLAs are expected to attend all class sessions and lectures, meet weekly with course staff, hold regular office hours, proctor exams and review sessions, and manage course tools. If such a role is of interest to you for a particular course, please reach out via email. 
 
 #### Can I get a recommendation letter?  
 
@@ -25,6 +25,6 @@ You can definitely ask; however, note that the earlier you ask the better (by th
 
 #### Can I do research with you?  
 
-It depends - mainly on your interests and my availability, which is currently at capacity through the 2025-2026 academic year. I tend to mentor a few **undergraduate** students each academic year. If you are interested in education research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
+It depends - mainly on your interests and my availability. I tend to mentor a few (1-3) **undergraduate** students each academic year. If you are interested in education or public health research, we should chat. If you're interested in something else, I encourage you to find someone at UCSD who's interested in what you're interested in, as you'll get the most out of an experience where you're working on something you're interested in with a mentor who can best advise you on that topic!
 
 As a Teaching Professor, I do *not* have a research group (**no grad students or postdocs**). As such, my main focus is undergraduate teaching. I don't have funding nor bandwidth for supporting a graduate student the way they deserve to be mentored and advised during their graduate studies at this time.
