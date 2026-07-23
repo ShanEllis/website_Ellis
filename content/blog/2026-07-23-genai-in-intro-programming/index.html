@@ -1,0 +1,1368 @@
+---
+title: GenAI In Intro Programming (a follow-up)
+author: Package Build
+date: '2026-07-23'
+slug: genai-in-intro-programming
+categories:
+  - education
+tags:
+  - ai
+  - classroom
+  - postmortem
+---
+
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
+
+<div id="tldr-summary" class="section level2">
+<h2>tl;dr Summary</h2>
+<ul>
+<li>93% of students report using GenAI for schoolwork (+21% from 2023)</li>
+<li>Frequency of use has increased, with 26% of students reporting using GenAI “most days” (+17% from 2023)</li>
+<li>Students conceive of GenAI as a personalized tutor (rather than just a “tool”)</li>
+</ul>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>In 2023 I summarized <a href="https://shannon-ellis.com/blog/your-students-are-using-chatgpt/">GenAI usage in COGS 18 Introduction to Python</a>, with 72% of students reporting having used GenAI for school tasks with few using it frequently. Three years later, and with a course redesign partially targeted at helping students to use GenAI to effectively support their learning, I was curious how usage trends and sentiments had changed.</p>
+</div>
+<div id="frequency-of-use" class="section level2">
+<h2>Frequency of use</h2>
+<p>In Spring 2026, 439 students completed the post-course survey with <strong>93% reporting using GenAI for schoolwork</strong>. This is a <strong>21% increase from Spring 2023</strong>. Frequency of use has also shifted, with more students reporting frequent use than they did a few years ago. (<strong>26% reporting using GenAI most days compared to 9% in 2023</strong>):</p>
+<p><img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+</div>
+<div id="technology-holdouts" class="section level2">
+<h2>Technology Holdouts</h2>
+<p>Earler in the term I had asked students who’ve chosen not to use GenAI technology why they’ve made that choice. Student responses revolved around:</p>
+<ul>
+<li><strong>wanting to ensure they’re learning</strong> (“<em>I do not believe in it. If I do bad at least it is on my own accord.</em>” and “<em>I want to actually learn the material and not rely on AI to learn the material, and just mirror what it does.</em>”)</li>
+<li><strong>environmental concern</strong>s (“<em>I’m personally against using AI due to its environmental impacts</em>” and “<em>I don’t agree with how AI information is obtained. I’m also highly against its environmental impact.</em>”)</li>
+<li><strong>ethical concerns</strong> (“<em>I believe that AI is causing or contributing to very serious issues worldwide and so I don’t use it in any of my classes or in my free time</em>” and “<em>I haven’t used GenAI because I don’t agree with the ethical issues surrounding. I also find that I learn more when I ask a person to explain it to me.</em>”)</li>
+<li><strong>not needing it</strong> (“<em>Mainly personal preference and also generally don’t need it.</em>”)</li>
+</ul>
+</div>
+<div id="how-have-students-perceptions-of-benefits-and-limitations-changed" class="section level2">
+<h2>How have students perceptions of benefits and limitations changed?</h2>
+<p>In both iterations students were asked how GenAI has helped or limited students in their abilities to learn. Summarizing these responses, students report that <strong>GenAI was helpful</strong>:</p>
+<ul>
+<li>acting as a <strong>personal tutor</strong>: students highlight that it adapts to their learning style, has unlimited patience, does not judge, available at all hours</li>
+<li>in debugging (mentioned more often than conceptual help)</li>
+<li><strong>generating practice problems</strong>: students were explicitly encouraged to do this and shown how effective this can be during Spring 2026</li>
+<li>because they <strong>prompted not to give answers</strong> (“DO NOT ANSWER JUST EXPLAIN”).</li>
+</ul>
+<p>When asked how “How do you think GenAI has limited your ability to learn in COGS 18?” student responses centered around:</p>
+<ul>
+<li><strong>over-reliance</strong> (students’ top concern): students commented on “learned helplessness,” “offloading mental capacity,” “limited cognitive friction,” and “hijack my thinking.”</li>
+<li><strong>substituting for humans</strong>: students lamented its use displacing social interaction in office hours, labs, and peer interactions</li>
+<li><strong>fast-fading understandin</strong>g: with students spending less time sitting with content, felt knowledge didn’t stick.</li>
+</ul>
+<p>While full responses from Spring 2023 are <a href="https://shannon-ellis.com/blog/your-students-are-using-chatgpt/">included in the previous post</a> full student responses from Spring 2026 are included below:</p>
+<details>
+<summary>
+Helped me learn (Spring 2026)
+</summary>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:700px; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+(optional) How do you think GenAI has helped you learn in COGS 18?
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+It helped a lot in my final project and debugging/explaining code throughout the quarter
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+helped me get help quicker and answer my specific questions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think the first half GenAI helped the most because i was brand new to coding so the Chatbots naturally turned homework problems I was asking about into real world questions/examples/comparisons that were more understandable .
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me to double-check my understanding and get answers to minor questions that I would feel uncomfortable asking Professor Ellis or my TAs.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+AI has helped me explain a lot of concepts or questions that I didn’t understand or why I did it wrong. It also helped create a summary of lectures (based on my lecture notes).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me to learn by making some of the different topics and their meanings easier. If you don’t have a programming background, some of the language of Python and the facets of coding can be hard to understand, so GenAI helped to make it easier to digest and understand.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped me understand why I’m making certain mistakes in the code I submit and explains to me how to avoid such mistakes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+If I didn’t understand something in class or want to learn something in a language/explanation I understand, GenAI is extremely helpful.I also learn a lot from coding, so just showing me how to debug something will teach me the code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped learned what certain lines of code are for. It is also a good refresher on what everything is.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped me to develop my understanding of key concepts by further explaining how they work and by pointing out computational errors that I have made in my code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+For example in practice exams, when I was stuck, I used GenAI for explaining the concepts and the places I got wrong in my code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It was super helpful in able to help explain why we format or use certain commands and how to assign different attributes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Since GenAI is basically coding, it helps me get a jist of how it works and having direct feedback on my work whenever is extremely helpful for my learning so I don’t have to keep a question that I might forget for my next lecture/lab.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me check my work, make sure I’m on the right track, and further explain anything that doesn’t make sense to me.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I’m not very familiar with advanced computer science work, so throughout COGS 18 I often used generative AI as a study tool/online tutor. I discuss concepts with it and try to relate programming logic to situations from my daily life to better understand how things worked. It was especially helpful because it adapted to the way I learn and explain things, making difficult concepts feel much more understandable for me. I also used it to generate new and slightly different practice questions to make sure I was actually understanding the material rather than just memorizing patterns.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it has very much helped aid my success. Even if I was confused about a certain concept, I would ask for it to explain that concept to me in many different ways and it helped me lock it into my brain. If you’re using it in the correct way, it can significantly help your learning. I also appreciate that it wasn’t made taboo. If I got a question wrong and was able to use chat to help me figure out what I did wrong it then cemented the correct idea into my mind.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+At times when I am frustrated when code doesn’t work and I am blinded by my own mistakes I can use ChatGPT to help me point out obvious errors or careless mistakes that I would have missed. Moreover it gives me more options to solving different kinds of problems.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped explain to me in details how each part of a code works when I didn’t understand
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has been a useful tool in helping the approach to a problem. But I try not to use it regularly because I do not want it to hijack my thinking.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It can give you hints at times. Umm, that’s like the only thing I used it for.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I would have it write me practice problems like the ones I gave it earlier. I would ask it to walk me through each problem step by step when I didn’t understand.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+yeah because so many things were simple errors and chat helps so much with identifying and then it also explains everything
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me a lot by explaining stuff and DEBUGGING, I dont know how I would have fared with debugging without GenAI.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI helped me clarify whenever I was unsure on how to write out or interpret a code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Help me solve problems instantly when i cannot access instant teachers’s help
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think its been quite helpful in explaining how to do certain problems, and or explaining what I did to get a question wrong. Getting to see what I actually need to improve on and how to do that was actually really good for me in terms of when it came to learning material.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It really helped me understand mistakes and create similar problems.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helped me a lot with finding bugs that I was struggling to catch with just my eyes. Sometimes a few typos or a single typo would get skipped by my human eyes so checking what was wrong with my code helped a lot.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It is has really helped me as a personal assistant that I can ask any question to, no matter how specific.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helped me understand concepts way more and more in depth
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I’ve been able to use it to generate practice problems which has been helpful while studying.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I didn’t need to use it to learn for this class, as I had some python knowledge coming into the class
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Its like a personal tutor - it would help walk me through every topic I was confused about with specifics and practices and illustrate the concepts in ways that make sense to me
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It had definitely help answer my questions quickly and when it provides explanations I am able to draw connections and understand the code better.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It explains many questions that I did wrong first, helps me have a better understanding of definitions.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gen AI gave me extremely personalized tips and help when it came to explaining why certain code does something.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it has helped me debug mostly, it has also helped me understand core concepts in python
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I mainly used GenAI to help me figure out a problem that I was stuck on. I have never used it to write my code, but instead to help me learn new ways I could implement specific code and also practice.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s helped me understand particular code that I needed to repeat to understand
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+worked like a tutor for me when i dont understand things!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped reexplain content to me and break down code step-by-step in order for me to understand what each cell/block means.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI helped me by providing similar practice problems to our practice exams, it was also giving me feedback as I worked on writing code which was really helpful.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped me to learn in this course by helping to break things down to me and explain step by step when I wasn’t sure of what I was being asked.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+When i encountered something i don’t understand, gen AI can explain it to me really clearly.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Having GenAI allowed me to get feedback and figure out problems I had a lot quicker than waiting to ask a TA or Prof. I think this allowed me to learn quicker and keep me on track, I was also able to gain a deeper understanding of certain topics through the help of GenAI if I wasn’t able to as a TA or Prof. 
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI helped me learn in COGS 18, by giving me a reason to care about learning the material. Without the existance of GenAI, I don’t think the introductory coding skills I’ve aquired would be enough to code anything very useful unless I took more coding classes (I have no prior coding exposure). However, GenAI lowers the skill ceiling necessary for me to code projects of value. Now that I know the basics and can debug, with the help of GenAI, I can produce code at a higher complexity.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+By giving me new ways of doing something that may be more efficient than what I had primarily intended, and catching errors.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me with explaining code, executing code, making code, and also testing my knowledge on code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has allowed me to understand the material at a deeper level by explaining code line by line, and also by providing hints rather than always giving me the entire code outright.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it’s done a really good job at breaking down some of the codes given to us that I just couldn’t seem to understand through your lecture videos
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It is the best tutor for someone like me because I need extra time and explanations that can become tedious for human helpers. It allows and assists me in thinking through problems until I can find a way to see them through my own eyes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI helps really well with codestyle and general/broad formatting. It also does well at explaining concepts further in depth. If there are specific questions about problems or specific aspects of the code I didn’t understand I would ask it for clarification.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It explains at my learning style and goes thoroughly through any questions I have.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+would help explain a lot of concepts I might’ve struggled with and needed a new perspective on how to understand it
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me remember rules of coding. If I made an error, it would tell me what it was and why it was wrong.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I would say GenAI has helped me identify what is lacking in my code and helped explain what certain functions do.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I feel like it was really good for tutoring me on questions I didn’t even know where to begin. It really helped explain the code line by line and I felt more prepared for exams because of it.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helped go into deeper depth in how to do a problem when I was really stuck.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI definitely helped with explaining errors I couldn’t pick out myself. It was also helpful in provided pointers to my short comings in thinking and written code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helped me ask questions and get immediate feedback and helped guide me in a direction that encouraged my learning especially in this class- Im not very good at coding.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me understand the topics in ways that I didn’t think about before
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Has helped me understand difficult concepts through explanation, and it has generated me lots of practice questions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me understand coding when I didn’t know what I was looking at. It explained it to me in a way where I could understand it and feel confident approaching problems and debugging.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helps me understand code when I can’t figure out what I’ve done wrong and is also helpful for finding typing errors and basic mistakes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helped me understand the code, how to answer prompts.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s definitely helped me in the second half of the quarter more especially when we stopped doing video quizzes. I would use GenAI as a source to explain the recent content that has been more confusing and difficult. Overall GenAI is a good way for me to gain feedback immediately and to help me practice repetition with different aspects of python.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+it helped me learn unittests pretty well for the final exam
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me expand my thinking and the code I am able to imagine but not write yet.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Explaining concepts that I didn’t fully understanding and helping to write code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped break down difficult concepts and reinforced my thinking (after correcting any errors).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It guided me in topics I couldn’t fully understand, tested my codes, debugged codes, and provided lots of feedback or practice problems that would improve my performance in the class. All the concepts were explained well during lecture, but I just used GenAI for additional help and clarification!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI is a wonderful tool because I can access it whenever I like. When I’m working on COGS 18 and office hours or other in-person meetings aren’t currently available, GenAI is a quick way to get help on a small problem I needed alongside other helpful websites like W3Schools.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helped explain concepts I was confused on or needed more clarification on. I also would use GenAI to tell me why my previous thinking/answer was wrong
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It was nice because I could tell it how I learned best and it would adjust to teach me difficult topics
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+When I was doing work on my own time and couldn’t ask anyone it was helpful to ask questions and get explanations for concepts or things that weren’t clicking.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI helps bring me towards the right direction whenever I am stuck. It also checks my code and makes it simpler to understand if my code style is too complicated.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has helped me within COGS18 by giving me access to help when I have no one physically present to help me. Having it help improve my code or explain Python concepts has been such an amazing help in terms of understanding course material.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helped me further understand structure of Python and how to go about solving problems.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It taught me in ways that cater specifically to me.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me better understand the content, there was times where I knew parts of the steps to debugging code and when I used AI it’d tell me where I kept struggling and what I should be doing to improve that.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI gave me grace in days where this quarter I needed more of than usual. When I felt stuck at home, AI helped fill in the gaps where I had no experience to even figure out what I was stuck on to begin with.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has really improved the way I approach the code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Whenever I use it I always make sure I tell it not to give the answers but rather direct me in the right direction. I do this to prevent myself from just getting the answer and not learning. So it’s actually helped me a lot to learn different ways to do things and approach problems when I was stuck. It’s also helped explain concepts and the reasons behind certain ways of writing code.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+The mere fact that it is allowed gives us a lot more opportunity to use it to explain concepts and check our understanding on certain areas.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has explained concepts and has broken down how to write code and explain class concepts.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It was OK
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI was helpful when I gave it my code and it made minor changes that would make it more efficient but I could still understand. It was also good at explaining concepts to me that I didn’t quite understand or explaining how the information I did know related to the example I needed help with. It also helped in teaching me new things (nothing major just some methods etc).
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+helped me study and provided practice questions. I think some of the concepts were initially overwhelming but asking Gen AI to help me study broke it down in a more manageable way.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+With the summaries provided by AI, I can study far more efficiently. And if there are any questions I don’t understand, I can keep asking until I understand.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I has helped me understand complicated topics in a very simple way.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me learn concepts and explain why you do certain things.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped to learn concepts in depth and clear my doubts with ease.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it’s a good teacher but I wish we had access to more information that was a deeper application of the material since the textbook and lectures are often surface level.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Its provided a framework for learning, and also helped me to not give up all hope when I failed to learn something the first time.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has assisted in learning in COGS 18 as it helped identify gaps in my knowledge of certain course material and provided me additional study problems and material to prepare for exams.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+A good tool
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me learn the self.assert unittest systems that were given, and I felt that was the most significant thing that it helped me do. In decoding problems, it helped me look at programs more efficiently and be able to see the little mistakes that were not allowing my code to run properly.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+it helped me study, because I would do brain dumps of material I knew, and it would help me fill any gaps in my coding knowledge
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I was able to ask questions so I understand the problem better and it explained it in a different way to help me learned better
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Helped me so much with understanding and studying
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has saved me a lot of time. Whenever I get stuck, I can get an answer quickly so I can keep moving on.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Help me understand concepts
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s helped me in understanding the logic behind certain problems
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It gave me a place to start when I am totally lost.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gen AI helped me understand why certain errors happened, and greatly helped me correct syntactical errors
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me practice more and make sure i was doing an accurage job
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped as a tool for debugging my code and understanding why my code would produce errors.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+would ask genAI to teach stuff to me like it was explaining it to a beginner
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think that it is very useful for revision and cuts out the time consuming parts.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helped a lot because when I didn’t know how to do certain topics I asked chat to explain it to me. When I would take practice test it would also help me learn topics I was unsure of.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has been helpful in explaining how stuff works when I was confused.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me provide a clear example of how the code should look like, also with explaining what parts of code could do in the moment.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+its helped breakdown topics i find difficult, and helped me so much with learning, and understanding and practising.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me work through coding problems and understand what the code is doing.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+it explained to me all the concepts I didn’t understand and explained why we used certain things in python/ their uses.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i think it helped me understand how think in pythons language (translation from english to code)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Explaining or giving hints when I got stuck on a problem
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s helped me sound out (almost conversationally) all of my sore points and frustrations/comprehension issues <em>when</em> they were happening, in real time. I liked also hearing the multiplicitous ways of explaining the logic behind code or even getting example code lines for me to take inspiration from/use as a baseline.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s really good at teaching code to beginners
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+He gave me a lot of new ideas and really helped me review the code
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think for sure it was a extremely accessible tutor which helped me learn unfamiliar topics.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i think sometimes i struggle to grasp concepts when they’re worded in a way, and i can ask gen ai questions to receive an explanation i can understand, which really helps me. i also don’t feel judged for asking “dumb” questions, so i end up learning more
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me understand it in an even more simplistic manner. Whenever I just could not understand a topic or how to do something. I would have it broken down in simple ways and some practice problems.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helps me a lot by making me understand how to do problems step by step and tells me how and why i’m wrong
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+By explaining how code works, and by explaining why certain answers are incorrect or easily mistaken to be correct.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI has provided simple explanations for questions I had regarding code, and was able to more quickly answer these questions than typical searching would.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me learn to look at the finer details when writing code, check every little thing that i might have missed to make my work the best it could be (and actually execute lol)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+helped me see directly how code the I’m working on actually works.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Its pretty good in help teaching code and reinforce my learning beyond the course videos and textbook (which were also already super helpful). This was mainly used to make sure I understood everything.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I won’t get stuck for too long when I encounter a problem, helped me become more efficient in learning.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has really explained the thought process behind code in really bite size pieces I could understand when I was overwhelmed
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+by allowing me to learn a problem through steps that force me to use critical thinking.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I found the GenAI helped me to explore useful solutions that were slightly beyond the scope of the course. I also found it to be helpful during the debugging process, especially for explaining unfamiliar error codes. Finally, I found GenAI to be a useful tool when I was struggling with how to approach structuring my code. It really helped me to write more elegantly and efficiently.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI mainly helped me understand/grasp concepts that I struggled comprehending through the textbook/lectures.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I would try to get it to teach me certain things but it would make it too easy with fill in the blank sections that didn’t teach me anything. However, it was great for testing my code and explaining what was wrong with it.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helped as a tool to better understand my material but I wanted to make sure I did everything like quizzes, tests, and assignments myself and if I ever got stuck I would have it help me with ideas it maybe point out where I could be going wrong.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It supported for understanding and explain problems I did not understand
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+very good
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I never like asking questions in classes generally, and I feel like I’ve gotten a lot better at learning through using ChatGPT because I will ask literally any and every question I want. The answers are actually good and really help me understand it better, and while this has mostly been helpful for my math classes, it was helpful sometimes for developing a deeper understanding in COGS 18, too.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I was able to put in my code and ask it what I am doing wrong and get feedback on the concepts I wasn’t understanding.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It explained concepts well and explains the question why and how
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI provides instant feedback, which is incredibly helpful for my coursework.And, I think, for students who are particularly introverted, asking an AI takes much less courage than asking a professor or TA. (Even though the teaching staff is incredibly kind and friendly!!! it can still be really intimidating for introverted people to ask questions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has helped me by explaining it to me in a better way without directly giving me the answer.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It helped me answer questions and learn concepts when a TA or Professor wasn’t available.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has definitely explained some concepts to me in ways that I can understand better. I tell it to compare certain concepts to real world situations for me.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<details>
+<summary>
+Limited learning (Spring 2026)
+</summary>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:400px; overflow-x: scroll; width:700px; ">
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+(optional) How do you think GenAI has limited your ability to learn in COGS 18?
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+I relied quite a lot on GenAI to write my final project, partially because I haven’t learned most of them (related to data analysis), but ideally I hope I could write the code by myself first and ask GenAI for revision
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i mostly learned through trial and error by asking genai questions rather than understanding the concepts deeply.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Near the second half of the course I’ll be honest, the material was farther indepth than I expected, not in a bad way but as a GE course my priority didn’t lie in the hands of this class which led to more GenAI just checking my work/fixing whatever I did wrong and more having the ability to finish assignments quicker than spending good time learning and understanding.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+none
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Because it was at mu disposal I didn’t even try to attempt the questions that said ‘With LLM’ because I knew they would never be asked on an exam and I didn’t really need to understand the topic in depth.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+no, it helped me study for exam, and explain concepts that I was still iffy about
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Since it was a big help in Cogs18, I felt like I relied on it a lot especially with assessments, labs, and the final project.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think generative AI limited my learning in COGS 18. I primarily used it as a supplement to the course materials to help me understand concepts, work through my reasoning, and get additional practice. If anything, it encouraged me to engage more actively with the material and ask more questions than I would have if I didn’t use it at all.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think it has limited my ability to learn in COGS18, I mainly used it as an aid at times when I wanted to learn more or had some problem understanding certain topics.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i think that at times it has given me the ability to get through assignments quickly
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Probably bad at problem solving on my own.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think it has but rather enhanced my understanding.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Restrict our develpement of asking good questions
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Not particularly, but it may have allowed me to slack on some topics that I never fully comprehended.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I am not sure how long the inforamtion will stick to me in the long run for the few times that I did ask for extra help since it made it a bit easy to just look at the answer and then continue rather than processing my typos.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It might prevent me from being as deeply knowledgeable because it is kind of like a crutch.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I feel like I can’t exactly fact check what GenAI says and have to take its word as it knows more than I do
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I’d have to be very careful to not lean into the temptation of having it write me code. If I did have it write me code , i’d spend extra time having it explain it to me before I moved on
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Probably lose the chance of thinking myself after making mistakes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It’s hard to determine this. I believe if I gave COGS18 the same amount of effort without Gen AI, I would’ve failed because I didn’t timely plan my questions around office hours. However, I think there’s an inflation of what’s expected from students within a challenging course, quickness to fully understand topics, and receive the highest grade possible. Gen AI helped me reach my goals however those goals may have looked different if Gen AI wasn’t able to be used.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i feel like it hasn’t but it could be
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sometimes it has given me code that we haven’t touched on in lecture, but it does a good job with explaining itself.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i honestly don’t think it has. i work really hard to use it only with integrity and to assist me.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Maybe with more critical thinking, sometimes I’d go to GenAI before thinking super deeply about a question I didn’t understand. I also saw a good amount of my peers using GenAI instead of engaging with the material and learning anything.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think something is only really drilled into your head if you keep having to do it/have to take apart your mistake on your own or find a syntax error on your own - having GenAI is definitely helpful time and efficiency wise, but I think it limits my own and my peers ability to think and problem solve by giving us an easy way out when thinking seems annoying- I tried to pretend that GenAI wasn’t an option sometimes so I could spend time thinking, but it was difficult to do that knowing that I could get my answer much quicker.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It may have had an impact on full critical thinking, or also made it easier for me to just have GenAI do code for me, as opposed to me learning through trial and error.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think sometimes I over used it so I wouldn’t have to do as much work.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think at times I may have been too reliant on it like instead of watching a lecture video I knew GenAI would be able to teach it to me quicker and in an easier way
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think that GenAI has decreased my ability to ask for help and communicate with others in a way. Rather than having to go to labs for specific questions I could just ask GenAI to explain.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sometimes it’s harder for me to understand concepts or different ways people may go about a problem.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+no, i had to try really hard to remember everything so i only used AI for practice problems or to help where i went wrong somewhere so i knew how to figure it out on an exam or hw
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+very easy to just default when you don’t understand something
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sometimes there is a fine line between using GenAI for additional help and depending on it
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t primarily use GenAI to help me learn in COGS 18 as I find it unhelpful since GenAI often overcomplicates the task.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I dont think it did because I never used it as a crutch. It was more so to help me understand things where I had no inclination of where to even go by myself
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I didn’t use GenAI to the point where it hindered by ability so I don’t think this question applied.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I can see why gene can limit learning but as for me if I ever got the answer from gemini or chat, or wtv I was using I just deleted the tab and start new I don’t want to inhibit my learning, plus I would always say DO NOT ANSWER JUST EXPLAIN …
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I relied on it more than I would have liked to.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sometimes I would rely on it too heavily
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Maybe I didn’t learn python to the fullest potential because I used AI to understand parts of it.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Its easy to rely on it since it knows the answer for literally every question in this class.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I didnt take opportunities to go to office hours
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Need to make sure to prompt it so it doesn’t give me the answer right away for VQ or Coding Labs
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think at time it was relied on <em>too</em> much but it did overall help me improve and approach the concepts.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think sometimes I got overdependent on GenAI.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I feel like it can definitely contribute to learned helplessness and sometimes caused me to utilize it quicker for more difficult problems.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think GenAI has limited my ability to learn in cogs 18 because I still go to office hours and discuss codes with other students. GenAI has explained the topics well every time and I only use it after I have studied what we learned in class. In other words, I use it to check my understanding not just solve the functions for me!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Because GenAI isn’t aware of what is taught exactly in COGS 18, some responses it gives may be beginner level but haven’t been covered in class so figuring out what the AI wrote/explained takes time away from meaningfully engaging with the material. This is why I use it sparingly and return back to more “traditional” sources of help (e.g. websites for Python beginners) when GenAI isn’t helpful.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it could be used a crutch on certain assignments.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n/a
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think it limited my abilities for this class.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+n/a
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Limited Cognitive Friction may limit how I retain the information.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has made it easier to get the full code, skipping steps at times
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+No, I don’t think so.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+At one point I was too dependent on it, but then I stopped using it so much and actually reviewed the course content.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Not much (except not needing to go to office hours)
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it can sometimes be easy to just ask AI to do the work for you so there were some things I didn’t get a lot of practice in (like documentation) since the concept wasn’t that hard it was just tedious work.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t think it has, it’s been a great tool!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sometimes it’ll just do things for you and you won’t know how they did that.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It is really helpful so I don’t think it can limit my ability in any way till the time I misuse it.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+There were some times where I let it give me too many hints
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI has the possibility to be limiting during the learning process as users could be struggling with a question and prompt GenAI to answer but then not attempt to understand why it is correct.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+depending on how you phrase questions, it can be frustrating to have it fully guide you in coding
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+didn’t always try to write all the code by myself
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+As long as I ask the wrote prompts it doesn’t limit me with giving me the answer instead i actually learn from it
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I dont think it has limited me. Instead, it has helped me improve my coding abilities and learn.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I have developed the habit of not trying super hard on my own.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i would often turn to Gen AI for guidance on a problem i was stuck on rather than referring to notes or lectures
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it helps you when used correctly
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI might have limited my learning ability as one may argue that spending the additional time of debugging my own code would help me from making similar mistakes in the future.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I do not like Gen AI, I started using it in Cogs 18 around the middle of the quarter, unfortunately I did exactly what I was afraid I’d do and started using it as a crutch
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Over-reliance. When I know it’s an option, it’s easy to just turn to it quickly without trying more on my own first.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has definitely made me more lazy on some parts and does take some of the struggle out of work.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Occasionally, when you simply just want the answer it can limiting to thinking on your own.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think without it i would have had to learn in a longer process which would have properly made the material become more imbedded in my brain.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i think i sometimes used it as a crutch instead of thinking hard about how to solve the problems myself
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Maybe I’m less creative at solving coding problems now.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+In the later part of the course where I really started to feel lost (around NumPy, Pandas, code-testing, or weeks approx. 7-10), me relying on ChatGPT to help me explain/work through the issues, I noticed, was not leading to my comprehension of the class anymore. I started noticing the ways I was offloading mental capacity (and thus, not learning) the more I engaged/got comfy with using LLMs. It needs limitations, if it’s implemented in the class.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/A
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+If you use it too often, it might reduce your creativity
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+i really don’t think i has. i think it has saved me hours of frustration and made me enjoy python and coding a lot more than i expected!
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Sometimes it’s not always correct
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+N/a. I think as long as I use it responsibly and take the time to learn it is what I don’t know it only enhances my understanding.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think GenAI is a hindrance to fully learning. Even when used as a tool and not as an easy answer machine, it lessens the time spent sitting with the content. Even if the understanding is there, I feel as though it fades much faster because there was less time spent on learning how to understand the content.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it increased my ability to learn, I was more engaged and I had tested every little error and switch up in my code on both Jupityr notebook and had asked ai why I can’t do something in a code (how it’ll get messed up) etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Might have decreased my ability to pay attention to details.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I think it was kind of a crutch for times I felt too busy to fully learn it that day. Like I could see myself getting in a trap of using it too much, but I knew I shouldn’t or I wouldn’t be prepared for the final
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+it makes it too easy sometimes to get the answer right away.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+GenAI is not always correct, so I felt I had to not only debug the problems given in this course, but also errors given by AI. A funny silver lining though was this made learning for me more effective.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t really think it limited my ability like k said it wasn’t the main thing I used to learn it was just a tool I used once in a while.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+It has limited my learning ability, I could have used other sources like OH or go back to videos and assignments
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+no
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I don’t really feel like it did until the end where we were doing more project-based things where we didn’t have video quizzes and I was trying to clarify most of everything from Chat, but it ended up okay in the end. I had to learn all the end concepts really well for my code project anyway, so it got learned correctly eventually, and I feel decently good about all the content now.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Perhaps, more traditional learning methods, like flipping through books, might take a lot of time, but to some extent, they deepen the memory?but I’m not entirely sure how significant this impact is for a computer-based subject
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+I dont believe it has.
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</details>
+<p>Notable shifts from Spring 2023 include:</p>
+<ul>
+<li>students are no longer interacting with the technology for the first time; safer to assume familiarity</li>
+<li>skepticism in accuracy has decreased as the technology has developed</li>
+<li>students previously framed GenAI as a tool and now are more likely to frame it as a tutor or assistant</li>
+<li>students now (but did not previously state they) have concerns about the technology displacing humans and/or the need for human interaction</li>
+</ul>
+</div>
+<div id="discussion" class="section level2">
+<h2>Discussion</h2>
+<p>Given that I explicitly teach students how to learn alongside GenAI, it’s likely not surprising that <strong>I’m pleased to see more students familiar with how to use GenAI in their studies</strong>. However, of course, I do value students environmental and ethical objections and have concerns on student over-reliance. However, I personally think that, for a course where GenAI can assist students in learning, the solution to avoid over-reliance and ensure learning is for instructors of a given course to design their course accordingly (i.e. through explicit instruction, oral and/or secure assessments, etc.) rather than to ban its use.</p>
+</div>

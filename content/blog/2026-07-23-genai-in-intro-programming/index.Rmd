@@ -1,0 +1,166 @@
+---
+title: GenAI In Intro Programming (a follow-up)
+author: Package Build
+date: '2026-07-23'
+slug: genai-in-intro-programming
+categories:
+  - education
+tags:
+  - ai
+  - classroom
+  - postmortem
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
+
+library(tidyverse)
+library(googlesheets4)
+library(kableExtra)
+library(patchwork)
+
+options(gargle_oauth_email = "sellis@ucsd.edu")
+options(knitr.table.format = "html") 
+```
+
+## tl;dr Summary
+- 93% of students report using GenAI for schoolwork (+21% from 2023)
+- Frequency of use has increased, with 26% of students reporting using GenAI "most days" (+17% from 2023)
+- Students conceive of GenAI as a personalized tutor (rather than just a "tool")
+
+## Introduction 
+
+
+In 2023 I summarized [GenAI usage in COGS 18 Introduction to Python](https://shannon-ellis.com/blog/your-students-are-using-chatgpt/), with 72% of students reporting having used GenAI for school tasks with few using it frequently. Three years later, and with a course redesign partially targeted at helping students to use GenAI to effectively support their learning, I was curious how usage trends and sentiments had changed.
+
+```{r cache=TRUE}
+sp23 <- read_sheet('1BN11yA4Xc1P5Hgaj0BIXKiwvsf1nLXEcq6a963ZBhyQ')
+sp26 <- read_sheet('1uskvhAXJvmBmZZydQYMda802kfE3suJmh1kYxo1GfVo')
+```
+
+## Frequency of use
+
+In Spring 2026, 439 students completed the post-course survey with **93% reporting using GenAI for schoolwork**. This is a **21% increase from Spring 2023**. Frequency of use has also shifted, with more students reporting frequent use than they did a few years ago. (**26% reporting using GenAI most days compared to 9% in 2023**):
+
+```{r}
+library(tidyverse)
+
+# 1. Select and standardize the question column
+sp23_clean <- sp23 |>
+  transmute(
+    quarter = "Sp23",
+    response = `How often do you use ChatGPT (or a similar technology) for schoolwork?`
+  )
+
+sp26_clean <- sp26 |>
+  transmute(
+    quarter = "Sp26",
+    response = `How often do you use GenAI for schoolwork (including COGS 18 and other courses)?`
+  )
+
+# 2. Combine the two quarters
+chatgpt_use <- bind_rows(sp23_clean, sp26_clean)
+
+# 3. Calculate response proportions within each quarter
+plot_data <- chatgpt_use |>
+  filter(!is.na(response)) |>
+  count(quarter, response) |>
+  group_by(quarter) |>
+  mutate(proportion = n / sum(n)) |>
+  ungroup()
+
+freq_plot <- ggplot(plot_data, aes(x = fct_relevel(response, "Frequently (most days)", after=3), y = proportion, fill = quarter)) +
+  geom_col(position = "dodge") +
+   geom_text(
+    aes(label = scales::percent(proportion, accuracy = 1)),
+    position = position_dodge(width = 0.9),
+    vjust = -0.3
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Sp23" = "#f1a340",
+      "Sp26" = "#998ec3")) +
+  scale_y_continuous(
+    labels = scales::percent,
+    limits = c(0, 1)
+  ) +
+  labs(
+    x = "Frequency of GenAI use for schoolwork",
+    y = "Proportion of respondents",
+    fill = "Quarter"
+  ) +
+  theme_classic(base_size = 14) +
+  scale_x_discrete(labels = function(x) str_wrap(x, width = 12)) +
+  theme(plot.title.position = "plot",
+        axis.title = element_blank(),
+        axis.ticks = element_blank()) 
+```
+
+```{r, fig.height=2, fig.show=TRUE}
+print(freq_plot)
+```
+
+
+## Technology Holdouts
+
+Earler in the term I had asked students who've chosen not to use GenAI technology why they've made that choice. Student responses revolved around:
+
+- **wanting to ensure they're learning** ("*I do not believe in it. If I do bad at least it is on my own accord.*" and "*I want to actually learn the material and not rely on AI to learn the material, and just mirror what it does.*")
+- **environmental concern**s ("*I'm personally against using AI due to its environmental impacts*" and "*I don't agree with how AI information is obtained. I'm also highly against its environmental impact.*")
+- **ethical concerns** ("*I believe that AI is causing or contributing to very serious issues worldwide and so I don't use it in any of my classes or in my free time*" and "*I haven't used GenAI because I don't agree with the ethical issues surrounding. I also find that I learn more when I ask a person to explain it to me.*")
+- **not needing it** ("*Mainly personal preference and also generally don't need it.*")
+
+## How have students perceptions of benefits and limitations changed? 
+
+In both iterations students were asked how GenAI has helped or limited students in their abilities to learn. Summarizing these responses, students report that **GenAI was helpful**: 
+
+- acting as a **personal tutor**: students highlight that it adapts to their learning style, has unlimited patience, does not judge, available at all hours
+- in debugging (mentioned more often than conceptual help)
+- **generating practice problems**: students were explicitly encouraged to do this and shown how effective this can be during Spring 2026
+- because they **prompted not to give answers** ("DO NOT ANSWER JUST EXPLAIN").
+
+When asked how  "How do you think GenAI has limited your ability to learn in COGS 18?" student responses centered around: 
+
+- **over-reliance** (students' top concern): students commented on "learned helplessness," "offloading mental capacity," "limited cognitive friction," and "hijack my thinking."
+- **substituting for humans**: students lamented its use displacing social interaction in office hours, labs, and peer interactions
+- **fast-fading understandin**g: with students spending less time sitting with content, felt knowledge didn't stick.
+
+While full responses from Spring 2023 are [included in the previous post](https://shannon-ellis.com/blog/your-students-are-using-chatgpt/) full student responses from Spring 2026 are included below:
+
+<details><summary>Helped me learn (Spring 2026) </summary>
+
+```{r, results="asis"}
+sp26 %>%
+  select(`(optional) How do you think GenAI has helped you learn in COGS 18?`) %>% 
+  filter(!is.na(`(optional) How do you think GenAI has helped you learn in COGS 18?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+</details>
+
+
+<details><summary>Limited learning (Spring 2026) </summary>
+
+```{r, results="asis"}
+sp26 %>%
+  select(`(optional) How do you think GenAI has limited your ability to learn in COGS 18?`) %>% 
+  filter(!is.na(`(optional) How do you think GenAI has limited your ability to learn in COGS 18?`)) %>% 
+  kbl() %>%
+  kable_styling(full_width = F) %>% 
+  scroll_box(width = "700px", height = "400px")
+```
+</details>
+
+Notable shifts from Spring 2023 include: 
+
+- students are no longer interacting with the technology for the first time; safer to assume familiarity
+- skepticism in accuracy has decreased as the technology has developed
+- students previously framed GenAI as a tool and now are more likely to frame it as a tutor or assistant
+- students now (but did not previously state they) have concerns about the technology displacing humans and/or the need for human interaction 
+
+
+## Discussion
+
+Given that I explicitly teach students how to learn alongside GenAI, it's likely not surprising that **I'm pleased to see more students familiar with how to use GenAI in their studies**. However, of course, I do value students environmental and ethical objections and have concerns on student over-reliance. However, I personally think that, for a course where GenAI can assist students in learning, the solution to avoid over-reliance and ensure learning is for instructors of a given course to design their course accordingly (i.e. through explicit instruction, oral and/or secure assessments, etc.) rather than to ban its use.

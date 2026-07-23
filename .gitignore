@@ -9,3 +9,4 @@
 Thumbs.db
 .hugo_build.lock
 blogdown/
+/.quarto/
